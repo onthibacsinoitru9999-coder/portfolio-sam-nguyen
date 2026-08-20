@@ -146,11 +146,11 @@ function createArticleCardHtml(a) {
   return `
     <div class="medical-card card-violet">
       <!-- Cover -->
-      <div class="relative aspect-[16/9] overflow-hidden group">
+      <div class="relative aspect-[16/9] overflow-hidden group bg-slate-900">
         <img src="${a.coverImage}" alt="${a.title}"
-          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent pointer-events-none"></div>
-        <div class="absolute top-3 left-3 bg-violet-600/90 backdrop-blur-md text-white text-[10px] px-2.5 py-1 rounded-lg font-bold">
+          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none"></div>
+        <div class="absolute top-3 left-3 bg-violet-600/90 backdrop-blur-md text-white text-[10px] px-2.5 py-1 rounded-lg font-bold shadow-xs">
           ${a.category}
         </div>
       </div>
