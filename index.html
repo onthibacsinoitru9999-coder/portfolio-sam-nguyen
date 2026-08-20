@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThS.BS. Nguyễn Hữu Sâm | Y Học Tái Tạo & Chấn Thương Chỉnh Hình — BV Bạch Mai</title>
+  <meta name="description" content="Hồ sơ phẫu thuật ThS.BS. Nguyễn Hữu Sâm — Chuyên gia Y học tái tạo, KHX xâm lấn tối thiểu, Phẫu thuật bàn tay. Bệnh viện Bạch Mai, Hà Nội.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Be Vietnam Pro','sans-serif']}}}}</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#F8FBFF]">
+
+<!-- ── Floating Zalo Button ── -->
+<div class="zalo-fab" id="zaloFab">
+  <div class="zalo-qr-popup" id="zaloPopup">
+    <p class="text-[11px] font-bold text-slate-400 uppercase tracking-widest mb-3 text-center">Quét QR · Kết nối Zalo</p>
+    <div class="bg-slate-50 rounded-2xl p-2 mb-3 border border-slate-100">
+      <img src="assets/images/zalo-qr.jpg" alt="Zalo QR Dr Sâm Nguyễn" class="w-full h-auto rounded-xl block">
+    </div>
+    <p class="text-sm font-bold text-slate-700 text-center mb-0.5">Dr Sâm Nguyễn</p>
+    <p class="text-xs text-slate-400 text-center mb-3">Phòng khám BV Bạch Mai</p>
+    <a href="https://zalo.me/0373030031" target="_blank" class="btn btn-zalo w-full justify-center text-sm py-2.5">Mở Zalo Chat</a>
+  </div>
+  <button onclick="document.getElementById('zaloPopup').classList.toggle('visible')" class="zalo-fab-btn">
+    <div class="zalo-pulse-ring"></div>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.03 2 11c0 2.87 1.5 5.42 3.86 7.08-.18.82-.69 2.53-1.6 3.65 1.53-.13 3.42-.74 4.77-1.66.94.27 1.94.43 2.97.43 5.52 0 10-4.03 10-9s-4.48-9-10-9z"/></svg>
+    <span>Chat Zalo Bác Sĩ</span>
+  </button>
+</div>
+
+<!-- ══════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════ -->
+<header class="nav-light sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-[70px] gap-4">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-3 shrink-0">
+        <div class="nhs-badge">NHS</div>
+        <div>
+          <p class="text-[15px] font-bold text-slate-800 leading-tight">ThS.BS. Nguyễn Hữu Sâm</p>
+          <p class="text-[11px] text-slate-400 font-medium">Bệnh viện Bạch Mai · Hà Nội</p>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-1">
+        <a href="index.html" class="nav-link active">Trang chủ</a>
+        <a href="chan-thuong.html" class="nav-link">Chấn thương</a>
+        <a href="tao-hinh.html" class="nav-link">Tạo hình</a>
+        <a href="kien-thuc.html" class="nav-link">Kiến thức Y khoa</a>
+      </nav>
+
+      <!-- Right -->
+      <div class="flex items-center gap-2 shrink-0">
+        <a href="https://zalo.me/0373030031" target="_blank" class="btn btn-zalo hidden md:inline-flex py-2.5 px-5 text-sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.03 2 11c0 2.87 1.5 5.42 3.86 7.08-.18.82-.69 2.53-1.6 3.65 1.53-.13 3.42-.74 4.77-1.66.94.27 1.94.43 2.97.43 5.52 0 10-4.03 10-9s-4.48-9-10-9z"/></svg>
+          0373.030.031
+        </a>
+        <a href="#contact" class="btn btn-light hidden lg:inline-flex py-2.5 px-5 text-sm">Liên hệ</a>
+        <button id="mobileMenuBtn" class="md:hidden p-2 text-slate-500 hover:text-slate-700 rounded-lg">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden pb-4 pt-2 border-t border-slate-100">
+      <nav class="flex flex-col gap-0.5">
+        <a href="index.html" class="nav-link active">Trang chủ</a>
+        <a href="chan-thuong.html" class="nav-link">Chấn thương chỉnh hình</a>
+        <a href="tao-hinh.html" class="nav-link">Tạo hình vi phẫu</a>
+        <a href="kien-thuc.html" class="nav-link">Kiến thức Y khoa</a>
+        <div class="mt-2 px-2">
+          <a href="https://zalo.me/0373030031" target="_blank" class="btn btn-zalo w-full justify-center py-3 text-sm">
+            💬 Zalo: 0373.030.031
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════
+     HERO SECTION
+══════════════════════════════════════ -->
+<section class="hero-section">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
+    <div class="grid lg:grid-cols-2 gap-12 items-start">
+
+      <!-- LEFT: Bio -->
+      <div>
+        <!-- Trust badges -->
+        <div class="flex flex-wrap items-center gap-2 mb-6">
+          <span class="flex items-center gap-1.5 text-xs font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1.5 rounded-full">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+            Đang nhận bệnh · BV Bạch Mai
+          </span>
+          <span class="text-xs font-semibold text-amber-700 bg-amber-50 border border-amber-200 px-3 py-1.5 rounded-full">
+            AO/ASIF Certified
+          </span>
+          <span class="text-xs font-semibold text-slate-500 bg-white border border-slate-200 px-3 py-1.5 rounded-full shadow-xs">
+            Thứ 2 – Thứ 6
+          </span>
+        </div>
+
+        <!-- Name -->
+        <p class="text-base font-semibold text-sky-700 mb-1">Thạc sỹ Bác sỹ</p>
+        <h1 class="text-4xl sm:text-5xl font-black text-slate-900 leading-tight tracking-tight mb-4">
+          Nguyễn Hữu Sâm
+        </h1>
+
+        <!-- Hospital -->
+        <div class="flex items-center gap-2.5 mb-6">
+          <div class="w-8 h-8 rounded-xl bg-sky-600 flex items-center justify-center text-white font-black text-xs shrink-0">BM</div>
+          <p class="text-sm font-medium text-slate-600">Khoa Chấn thương Chỉnh hình & Cột sống — <strong class="text-slate-800">Bệnh viện Bạch Mai</strong></p>
+        </div>
+
+        <!-- Specialties -->
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="specialty-pill">🧬 Y học tái tạo</span>
+          <span class="specialty-pill">🦴 KHX xâm lấn tối thiểu</span>
+          <span class="specialty-pill">🖐️ Phẫu thuật bàn tay</span>
+          <span class="specialty-pill">✨ Tạo hình tự thân</span>
+        </div>
+
+        <!-- Quote -->
+        <div class="quote-block mb-8">
+          <p class="text-base font-medium">"First do no harm"</p>
+          <p class="text-sm text-slate-400 mt-1">Nguyên tắc y đức cốt lõi</p>
+        </div>
+
+        <!-- CTAs -->
+        <div class="flex flex-wrap gap-3 mb-10">
+          <a href="chan-thuong.html" class="btn btn-primary text-sm">
+            <svg width="16" height="16" fill="none" stroke="white" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            Xem Ca Phẫu Thuật
+          </a>
+          <a href="https://zalo.me/0373030031" target="_blank" class="btn btn-zalo text-sm">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.03 2 11c0 2.87 1.5 5.42 3.86 7.08-.18.82-.69 2.53-1.6 3.65 1.53-.13 3.42-.74 4.77-1.66.94.27 1.94.43 2.97.43 5.52 0 10-4.03 10-9s-4.48-9-10-9z"/></svg>
+            Chat Zalo
+          </a>
+          <a href="#contact" class="btn btn-outline text-sm">Hội chẩn</a>
+        </div>
+
+        <!-- Stats row -->
+        <div class="grid grid-cols-3 gap-4 p-5 bg-white rounded-2xl border border-slate-100 shadow-sm">
+          <div class="text-center">
+            <p class="text-2xl font-black text-sky-700">2019</p>
+            <p class="text-xs text-slate-400 font-medium mt-0.5">Năm bắt đầu</p>
+          </div>
+          <div class="text-center border-x border-slate-100">
+            <p class="text-2xl font-black text-teal-600">+100</p>
+            <p class="text-xs text-slate-400 font-medium mt-0.5">Ca phẫu thuật</p>
+          </div>
+          <div class="text-center">
+            <p class="text-2xl font-black text-violet-600">BM</p>
+            <p class="text-xs text-slate-400 font-medium mt-0.5">Bạch Mai Hà Nội</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Zalo Contact Card -->
+      <div class="flex flex-col gap-5">
+
+        <!-- Zalo QR Card — large, prominent -->
+        <div class="card p-6 text-center">
+          <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Kết nối trực tiếp qua Zalo</p>
+          <div class="bg-slate-50 rounded-2xl p-3 border border-slate-100 mb-4 shadow-inner">
+            <img src="assets/images/zalo-qr.jpg" alt="Zalo QR Dr Sâm Nguyễn" class="w-full h-auto rounded-xl block">
+          </div>
+          <p class="text-lg font-bold text-slate-800 mb-0.5">Dr Sâm Nguyễn</p>
+          <p class="text-sm text-slate-400 mb-4">Quét QR bằng app Zalo để kết nối</p>
+          <a href="https://zalo.me/0373030031" target="_blank" class="btn btn-zalo w-full justify-center py-3.5 text-sm">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.03 2 11c0 2.87 1.5 5.42 3.86 7.08-.18.82-.69 2.53-1.6 3.65 1.53-.13 3.42-.74 4.77-1.66.94.27 1.94.43 2.97.43 5.52 0 10-4.03 10-9s-4.48-9-10-9z"/></svg>
+            Chat Zalo: 0373.030.031
+          </a>
+        </div>
+
+        <!-- Quick info card -->
+        <div class="card p-5 flex flex-col gap-3">
+          <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-50">
+            <div class="contact-icon bg-sky-100 text-sky-600">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-500 mb-0">Phòng khám</p>
+              <p class="text-sm text-slate-700 font-medium">Khoa Ngoại · 78 Giải Phóng, Đống Đa</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-50">
+            <div class="contact-icon bg-teal-100 text-teal-600">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-500">Lịch khám</p>
+              <p class="text-sm text-slate-700 font-medium">Thứ Hai đến Thứ Sáu</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-50">
+            <div class="contact-icon bg-amber-100 text-amber-600">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-500">Email</p>
+              <a href="mailto:samnguyenhmu@gmail.com" class="text-sm text-sky-600 font-medium hover:underline">samnguyenhmu@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     FEATURE NAV CARDS
+══════════════════════════════════════ -->
+<section class="py-12 bg-white border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid sm:grid-cols-3 gap-5">
+
+      <!-- Chấn thương -->
+      <a href="chan-thuong.html" class="feature-card card-lift group">
+        <div class="fc-bar" style="background:linear-gradient(90deg,#0284C7,#38BDF8)"></div>
+        <div class="fc-icon bg-sky-50">🦴</div>
+        <h3 class="text-xl font-black text-slate-900 mb-2 group-hover:text-sky-700">Portfolio Chấn Thương</h3>
+        <p class="text-sm text-slate-500 leading-relaxed mb-5">Nẹp vít khóa LCP, đinh nội tủy xâm lấn tối thiểu, phẫu thuật bàn tay & cổ tay tại BV Bạch Mai.</p>
+        <div class="flex items-center justify-between">
+          <span class="text-sm font-bold text-sky-700">Xem hồ sơ ca mổ</span>
+          <div class="fc-arrow bg-sky-50 text-sky-600 group-hover:bg-sky-600 group-hover:text-white">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Tạo hình -->
+      <a href="tao-hinh.html" class="feature-card card-lift group">
+        <div class="fc-bar" style="background:linear-gradient(90deg,#0D9488,#2DD4BF)"></div>
+        <div class="fc-icon bg-teal-50">✨</div>
+        <h3 class="text-xl font-black text-slate-900 mb-2 group-hover:text-teal-700">Portfolio Tạo Hình</h3>
+        <p class="text-sm text-slate-500 leading-relaxed mb-5">Vạt da tự thân vi phẫu, Y học tái tạo. Kéo thanh trượt để xem kết quả Trước — Sau mổ.</p>
+        <div class="flex items-center justify-between">
+          <span class="text-sm font-bold text-teal-700">Xem trước — sau mổ</span>
+          <div class="fc-arrow bg-teal-50 text-teal-600 group-hover:bg-teal-600 group-hover:text-white">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Kiến thức -->
+      <a href="kien-thuc.html" class="feature-card card-lift group">
+        <div class="fc-bar" style="background:linear-gradient(90deg,#7C3AED,#A78BFA)"></div>
+        <div class="fc-icon bg-violet-50">📖</div>
+        <h3 class="text-xl font-black text-slate-900 mb-2 group-hover:text-violet-700">Kiến Thức Y Khoa</h3>
+        <p class="text-sm text-slate-500 leading-relaxed mb-5">Guideline AO/ASIF, kỹ thuật vạt tự thân, phác đồ phục hồi chức năng sau phẫu thuật.</p>
+        <div class="flex items-center justify-between">
+          <span class="text-sm font-bold text-violet-700">Đọc bài viết</span>
+          <div class="fc-arrow bg-violet-50 text-violet-600 group-hover:bg-violet-600 group-hover:text-white">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SECTION 1: TRAUMA CASES
+══════════════════════════════════════ -->
+<section class="py-14 bg-[#F8FBFF]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+      <div>
+        <p class="section-eyebrow mb-2">Phân hệ 01 · Chấn thương chỉnh hình</p>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900">Ca Phẫu Thuật Chấn Thương Nổi Bật</h2>
+        <p class="text-slate-500 text-sm mt-1">KHX xâm lấn tối thiểu, nẹp vít khóa LCP và phẫu thuật bàn tay tại BV Bạch Mai.</p>
+      </div>
+      <a href="chan-thuong.html" class="btn btn-light text-sm py-2.5 px-5 shrink-0">
+        Xem tất cả
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div id="featured-trauma-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ══════════════════════════════════════
+     SECTION 2: PLASTIC CASES
+══════════════════════════════════════ -->
+<section class="py-14 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+      <div>
+        <p class="section-eyebrow teal mb-2">Phân hệ 02 · Tạo hình vi phẫu</p>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900">Tạo Hình — So Sánh Trước & Sau Mổ</h2>
+        <p class="text-slate-500 text-sm mt-1">Kéo thanh trượt để xem kết quả phục hồi giải phẫu mô mềm tự thân.</p>
+      </div>
+      <a href="tao-hinh.html" class="btn btn-light text-sm py-2.5 px-5 shrink-0">
+        Xem tất cả
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div id="featured-plastic-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ══════════════════════════════════════
+     SECTION 3: ARTICLES
+══════════════════════════════════════ -->
+<section class="py-14 bg-[#F8FBFF]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+      <div>
+        <p class="section-eyebrow violet mb-2">Phân hệ 03 · Kiến thức y khoa</p>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900">Bài Viết Chuyên Môn & Phác Đồ Lâm Sàng</h2>
+        <p class="text-slate-500 text-sm mt-1">Guideline AO/ASIF, kỹ thuật vạt tự thân & cẩm nang phục hồi sau mổ.</p>
+      </div>
+      <a href="kien-thuc.html" class="btn btn-light text-sm py-2.5 px-5 shrink-0">
+        Xem tất cả
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div id="featured-articles-container" class="grid grid-cols-1 md:grid-cols-3 gap-5"></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     CONTACT SECTION
+══════════════════════════════════════ -->
+<section id="contact" class="py-16 bg-white border-t border-slate-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <p class="section-eyebrow mx-auto mb-3 justify-center">Liên hệ & Hội chẩn</p>
+      <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mb-3">Trao Đổi Chuyên Môn</h2>
+      <p class="text-slate-500 text-sm max-w-lg mx-auto leading-relaxed">Dành cho đồng nghiệp trao đổi kỹ thuật mổ hoặc người bệnh cần tư vấn phương án điều trị.</p>
+    </div>
+
+    <div class="grid lg:grid-cols-3 gap-8">
+
+      <!-- Left: Info + Form -->
+      <div class="lg:col-span-2 flex flex-col gap-5">
+
+        <!-- Contact info grid -->
+        <div class="grid sm:grid-cols-2 gap-3">
+          <div class="contact-row">
+            <div class="contact-icon bg-sky-100 text-sky-600">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-400 mb-0.5">Đơn vị công tác</p>
+              <p class="text-sm font-semibold text-slate-700 leading-snug">Khoa CTCH & Cột sống<br>Bệnh viện Bạch Mai</p>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon bg-teal-100 text-teal-600">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-400 mb-0.5">Địa chỉ phòng khám</p>
+              <p class="text-sm font-semibold text-slate-700 leading-snug">78 Giải Phóng, Đống Đa<br>Hà Nội</p>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon bg-amber-100 text-amber-600">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-400 mb-0.5">Lịch làm việc</p>
+              <p class="text-sm font-semibold text-slate-700">Thứ Hai — Thứ Sáu</p>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon bg-violet-100 text-violet-600">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-400 mb-0.5">Email</p>
+              <a href="mailto:samnguyenhmu@gmail.com" class="text-sm font-semibold text-sky-600 hover:underline">samnguyenhmu@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Zalo link card -->
+        <a href="https://zalo.me/0373030031" target="_blank"
+           class="flex items-center justify-between p-5 rounded-2xl bg-blue-50 border border-blue-100 hover:bg-blue-100 hover:border-blue-200 transition-all group">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-[#0068FF] flex items-center justify-center font-black text-white text-sm shadow-lg">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.03 2 11c0 2.87 1.5 5.42 3.86 7.08-.18.82-.69 2.53-1.6 3.65 1.53-.13 3.42-.74 4.77-1.66.94.27 1.94.43 2.97.43 5.52 0 10-4.03 10-9s-4.48-9-10-9z"/></svg>
+            </div>
+            <div>
+              <p class="font-bold text-slate-800">Chat Zalo · ThS.BS. Nguyễn Hữu Sâm</p>
+              <p class="text-sm text-slate-500">0373.030.031 · Phản hồi trong giờ hành chính</p>
+            </div>
+          </div>
+          <div class="w-8 h-8 rounded-xl bg-blue-100 flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <!-- Quick form -->
+        <div class="card p-6">
+          <p class="text-base font-bold text-slate-800 mb-4">Gửi nội dung hội chẩn</p>
+          <form onsubmit="event.preventDefault(); window.location.href='mailto:samnguyenhmu@gmail.com?subject=Yêu cầu hội chẩn&body='+encodeURIComponent(document.getElementById('msg').value);" class="space-y-3">
+            <input type="text" required placeholder="Họ tên / Đơn vị..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:border-sky-400 transition-colors">
+            <textarea id="msg" rows="3" required placeholder="Mô tả tổn thương, cơ chế chấn thương hoặc câu hỏi cần tư vấn..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:border-sky-400 transition-colors resize-none"></textarea>
+            <button type="submit" class="btn btn-primary w-full justify-center py-3 text-sm">
+              Gửi Email Hội Chẩn
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right: QR Card -->
+      <div class="flex flex-col gap-4">
+        <div class="card p-6 text-center flex-1 flex flex-col">
+          <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-5">Quét QR · Nhắn Zalo ngay</p>
+          <div class="flex-1 flex items-center justify-center">
+            <div class="bg-white rounded-3xl p-3 shadow-md border border-slate-100 w-full max-w-[200px] mx-auto">
+              <img src="assets/images/zalo-qr.jpg" alt="Zalo QR Dr Sâm Nguyễn" class="w-full h-auto rounded-2xl block">
+            </div>
+          </div>
+          <p class="text-base font-bold text-slate-800 mt-5 mb-1">Dr Sâm Nguyễn</p>
+          <p class="text-xs text-slate-400 mb-4">Zalo name card · BV Bạch Mai</p>
+          <a href="https://zalo.me/0373030031" target="_blank" class="btn btn-zalo w-full justify-center py-3">Mở Zalo ngay</a>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="card p-5">
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg bg-amber-50 border border-amber-100 flex items-center justify-center shrink-0">
+              <svg width="14" height="14" fill="none" stroke="#D97706" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/></svg>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-amber-700 mb-1">Lưu ý y khoa</p>
+              <p class="text-xs text-slate-400 leading-relaxed">Nội dung mang tính học thuật. Người bệnh cần thăm khám trực tiếp. Thông tin bệnh nhân đã ẩn danh hóa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer class="footer-dark py-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="nhs-badge">NHS</div>
+        <div>
+          <p class="text-sm font-bold text-white">ThS.BS. Nguyễn Hữu Sâm</p>
+          <p class="text-xs text-slate-400 mt-0.5">Khoa CTCH & Cột sống · Bệnh viện Bạch Mai · "First do no harm"</p>
+        </div>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400">
+        <a href="chan-thuong.html" class="hover:text-sky-400 transition-colors">Chấn thương</a>
+        <a href="tao-hinh.html" class="hover:text-teal-400 transition-colors">Tạo hình</a>
+        <a href="kien-thuc.html" class="hover:text-violet-400 transition-colors">Kiến thức Y khoa</a>
+        <a href="https://zalo.me/0373030031" target="_blank" class="hover:text-white transition-colors">Zalo: 0373030031</a>
+      </div>
+      <p class="text-xs text-slate-500 text-center md:text-right">© 2025 ThS.BS. Nguyễn Hữu Sâm<br>Xuất bản qua GitHub Pages</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="js/cases-data.js"></script>
+<script src="js/articles-data.js"></script>
+<script src="js/before-after.js"></script>
+<script src="js/app.js"></script>
+<script>
+  document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+  });
+  document.addEventListener('click', e => {
+    if (!document.getElementById('zaloFab').contains(e.target)) {
+      document.getElementById('zaloPopup').classList.remove('visible');
+    }
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    const trauma = document.getElementById('featured-trauma-container');
+    const traumaCases = SURGICAL_CASES.filter(c => c.type === 'chan-thuong');
+    if (trauma) trauma.innerHTML = traumaCases.map(c => createTraumaCardHtml(c)).join('');
+
+    const plastic = document.getElementById('featured-plastic-container');
+    const plasticCases = SURGICAL_CASES.filter(c => c.type === 'tao-hinh');
+    if (plastic) {
+      plastic.innerHTML = plasticCases.map(c => createPlasticCardHtml(c)).join('');
+      initBeforeAfterSliders();
+    }
+    const articles = document.getElementById('featured-articles-container');
+    if (articles) articles.innerHTML = MEDICAL_ARTICLES.slice(0,3).map(a => createArticleCardHtml(a)).join('');
+  });
+</script>
+</body>
+</html>
