@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi Tiết Ca Phẫu Thuật | ThS.BS. Nguyễn Hữu Sâm — BV Bạch Mai</title>
+  <meta name="description" content="Chi tiết báo cáo ca lâm sàng phẫu thuật, quy trình kỹ thuật mổ của ThS.BS. Nguyễn Hữu Sâm — BV Bạch Mai.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Be Vietnam Pro','sans-serif']}}}}</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#F8FBFF] flex flex-col min-h-screen">
+
+<!-- Floating Zalo Button -->
+<div class="zalo-fab" id="zaloFab">
+  <div class="zalo-qr-popup" id="zaloPopup">
+    <p class="text-[11px] font-bold text-slate-400 uppercase tracking-widest mb-3 text-center">Quét QR · Kết nối Zalo</p>
+    <div class="bg-slate-50 rounded-2xl p-2 mb-3 border border-slate-100">
+      <img src="assets/images/zalo-qr.jpg" alt="Zalo QR Dr Sâm Nguyễn" class="w-full h-auto rounded-xl block">
+    </div>
+    <p class="text-sm font-bold text-slate-700 text-center mb-0.5">Dr Sâm Nguyễn</p>
+    <p class="text-xs text-slate-400 text-center mb-3">Phòng khám BV Bạch Mai</p>
+    <a href="https://zalo.me/0373030031" target="_blank" class="btn btn-zalo w-full justify-center text-sm py-2.5">Mở Zalo Chat</a>
+  </div>
+  <button onclick="document.getElementById('zaloPopup').classList.toggle('visible')" class="zalo-fab-btn">
+    <div class="zalo-pulse-ring"></div>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.03 2 11c0 2.87 1.5 5.42 3.86 7.08-.18.82-.69 2.53-1.6 3.65 1.53-.13 3.42-.74 4.77-1.66.94.27 1.94.43 2.97.43 5.52 0 10-4.03 10-9s-4.48-9-10-9z"/></svg>
+    <span>Chat Zalo Bác Sĩ</span>
+  </button>
+</div>
+
+<!-- Header Navigation -->
+<header class="nav-light sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-[70px] gap-4">
+      <a href="index.html" class="flex items-center gap-3 shrink-0">
+        <div class="nhs-badge">NHS</div>
+        <div>
+          <p class="text-[15px] font-bold text-slate-800 leading-tight">ThS.BS. Nguyễn Hữu Sâm</p>
+          <p class="text-[11px] text-slate-400 font-medium">Bệnh viện Bạch Mai · Hà Nội</p>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-1">
+        <a href="index.html" class="nav-link">Trang chủ</a>
+        <a href="chan-thuong.html" class="nav-link">Chấn thương</a>
+        <a href="tao-hinh.html" class="nav-link">Tạo hình</a>
+        <a href="kien-thuc.html" class="nav-link">Kiến thức Y khoa</a>
+      </nav>
+      <div class="flex items-center gap-2 shrink-0">
+        <a href="https://zalo.me/0373030031" target="_blank" class="btn btn-zalo hidden md:inline-flex py-2.5 px-5 text-sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.03 2 11c0 2.87 1.5 5.42 3.86 7.08-.18.82-.69 2.53-1.6 3.65 1.53-.13 3.42-.74 4.77-1.66.94.27 1.94.43 2.97.43 5.52 0 10-4.03 10-9s-4.48-9-10-9z"/></svg>
+          0373.030.031
+        </a>
+        <button id="mobileMenuBtn" class="md:hidden p-2 text-slate-500 hover:text-slate-700 rounded-lg">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden pb-4 pt-2 border-t border-slate-100">
+      <nav class="flex flex-col gap-0.5">
+        <a href="index.html" class="nav-link">Trang chủ</a>
+        <a href="chan-thuong.html" class="nav-link">Chấn thương chỉnh hình</a>
+        <a href="tao-hinh.html" class="nav-link">Tạo hình vi phẫu</a>
+        <a href="kien-thuc.html" class="nav-link">Kiến thức Y khoa</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- Case Detail Content -->
+<main class="flex-grow py-10">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Top toolbar -->
+    <div class="flex items-center justify-between mb-6">
+      <button onclick="history.back()" class="btn btn-light text-xs py-2 px-4 shadow-xs">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" d="M10 19l-7-7 7-7M3 12h18"/></svg>
+        Quay lại
+      </button>
+      <div id="case-category-badge" class="tag tag-blue text-xs font-semibold">Ca lâm sàng</div>
+    </div>
+
+    <!-- Container -->
+    <div id="case-detail-content" class="space-y-6">
+      <div class="text-center py-20">
+        <div class="w-10 h-10 border-3 border-sky-600 border-t-transparent rounded-full animate-spin mx-auto mb-3"></div>
+        <p class="text-xs text-slate-400">Đang tải hồ sơ ca mổ...</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer-dark py-10 mt-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="nhs-badge">NHS</div>
+        <div>
+          <p class="text-sm font-bold text-white">ThS.BS. Nguyễn Hữu Sâm</p>
+          <p class="text-xs text-slate-400 mt-0.5">Khoa CTCH & Cột sống · Bệnh viện Bạch Mai · Dữ liệu đã ẩn danh hóa</p>
+        </div>
+      </div>
+      <p class="text-xs text-slate-500 text-center md:text-right">© 2025 ThS.BS. Nguyễn Hữu Sâm<br>Xuất bản qua GitHub Pages</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="js/cases-data.js"></script>
+<script src="js/before-after.js"></script>
+<script src="js/app.js"></script>
+<script>
+  document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+  });
+  document.addEventListener('click', e => {
+    if (!document.getElementById('zaloFab').contains(e.target)) {
+      document.getElementById('zaloPopup').classList.remove('visible');
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    let caseId = urlParams.get('id');
+    if (!caseId && SURGICAL_CASES.length > 0) caseId = SURGICAL_CASES[0].id;
+
+    const caseData = getCaseById(caseId);
+    const container = document.getElementById('case-detail-content');
+    const badge = document.getElementById('case-category-badge');
+
+    if (!caseData) {
+      container.innerHTML = `
+        <div class="card p-12 text-center">
+          <h2 class="text-xl font-bold text-slate-800 mb-2">Không tìm thấy mã ca phẫu thuật này</h2>
+          <p class="text-sm text-slate-400 mb-6">Mã ca [${caseId}] không tồn tại hoặc đã thay đổi.</p>
+          <a href="index.html" class="btn btn-primary">Về trang chủ</a>
+        </div>`;
+      return;
+    }
+
+    badge.textContent = caseData.category;
+    badge.className = `tag ${caseData.type === 'tao-hinh' ? 'tag-teal' : 'tag-blue'} text-xs font-semibold`;
+
+    const tagsHtml = caseData.tags.map(t => `<span class="tag tag-gray text-xs">${t}</span>`).join(' ');
+
+    let visualComparisonHtml = '';
+    if (caseData.type === 'tao-hinh' && caseData.beforeImg && caseData.afterImg) {
+      visualComparisonHtml = `
+        <div class="card card-teal p-6 mb-6">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-base font-bold text-slate-800 flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-teal-500"></span>
+              So Sánh Trước & Sau Phẫu Thuật
+            </h3>
+            <span class="text-xs text-slate-400 font-medium">Kéo thanh trượt để so sánh</span>
+          </div>
+          <div class="ba-container max-w-2xl mx-auto ${caseData.sensitiveImage ? 'sensitive-container' : ''}">
+            <img src="${caseData.beforeImg}" alt="Trước phẫu thuật" class="ba-image ${caseData.sensitiveImage ? 'sensitive-blur' : ''}">
+            <div class="ba-badge ba-badge-before">Trước mổ</div>
+            <div class="ba-after-wrapper">
+              <img src="${caseData.afterImg}" alt="Sau phẫu thuật" class="ba-image ${caseData.sensitiveImage ? 'sensitive-blur' : ''}">
+              <div class="ba-badge ba-badge-after">Sau mổ</div>
+            </div>
+            <div class="ba-slider-handle">
+              <svg width="14" height="14" fill="none" stroke="#0369A1" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 9l-3 3 3 3m8-6l3 3-3 3"/></svg>
+            </div>
+            ${caseData.sensitiveImage ? `
+              <div class="sensitive-overlay absolute inset-0 bg-white/80 backdrop-blur-sm flex flex-col items-center justify-center p-4 text-center z-20">
+                <span class="tag tag-amber mb-2">Ảnh phẫu thuật thực tế</span>
+                <button onclick="toggleSensitiveImage(this)" class="btn btn-teal text-xs py-2">Mở khóa xem</button>
+              </div>` : ''}
+          </div>
+        </div>`;
+    }
+
+    container.innerHTML = `
+      <!-- Case Header Card -->
+      <div class="card p-6 sm:p-8">
+        <div class="flex flex-wrap items-center gap-3 text-xs text-slate-400 mb-3">
+          <span class="font-mono font-bold bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md">${caseData.id}</span>
+          <span>·</span>
+          <span>Ngày thực hiện: <strong>${caseData.date}</strong></span>
+          <span>·</span>
+          <span>${caseData.hospital}</span>
+        </div>
+
+        <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight leading-snug mb-4">
+          ${caseData.title}
+        </h1>
+
+        <div class="bg-slate-50 border border-slate-200/70 rounded-2xl p-4 text-sm text-slate-700 leading-relaxed mb-5">
+          <div class="text-xs font-bold text-sky-800 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Tóm tắt bệnh sử & lâm sàng
+          </div>
+          ${caseData.patientInfo}. ${caseData.summary}
+        </div>
+
+        <div class="flex flex-wrap gap-1.5">${tagsHtml}</div>
+      </div>
+
+      ${visualComparisonHtml}
+
+      <!-- 3-Phase Clinical Details -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        
+        <!-- Phase 1: Pre-op -->
+        <div class="card p-5 flex flex-col justify-between">
+          <div>
+            <div class="w-8 h-8 rounded-xl bg-amber-50 text-amber-700 font-bold text-sm flex items-center justify-center mb-3">1</div>
+            <h3 class="text-base font-bold text-slate-900 mb-3">Trước Phẫu Thuật</h3>
+            <div class="space-y-2.5 text-xs text-slate-600 mb-4">
+              <div><strong class="text-slate-800 block">Chẩn đoán:</strong>${caseData.preOp.diagnosis}</div>
+              <div><strong class="text-slate-800 block">Triệu chứng:</strong>${caseData.preOp.symptoms}</div>
+            </div>
+          </div>
+          <div>
+            ${caseData.preOp.imaging ? `<div class="rounded-xl overflow-hidden bg-slate-100 aspect-video mb-1.5"><img src="${caseData.preOp.imaging}" alt="Trước mổ" class="w-full h-full object-cover"></div>` : ''}
+            <p class="text-[11px] text-slate-400 italic">${caseData.preOp.imagingDesc}</p>
+          </div>
+        </div>
+
+        <!-- Phase 2: Intra-op -->
+        <div class="card p-5 flex flex-col justify-between">
+          <div>
+            <div class="w-8 h-8 rounded-xl bg-sky-50 text-sky-700 font-bold text-sm flex items-center justify-center mb-3">2</div>
+            <h3 class="text-base font-bold text-slate-900 mb-3">Kỹ Thuật Mổ</h3>
+            <div class="space-y-2.5 text-xs text-slate-600 mb-4">
+              <div><strong class="text-slate-800 block">Quy trình:</strong>${caseData.intraOp.technique}</div>
+              <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-100">
+                <div><strong class="text-slate-800 block">Thời gian:</strong>${caseData.intraOp.duration}</div>
+                <div><strong class="text-slate-800 block">Máu mất:</strong>${caseData.intraOp.bloodLoss}</div>
+              </div>
+              <div><strong class="text-slate-800 block">Vô cảm:</strong>${caseData.intraOp.anesthesia}</div>
+            </div>
+          </div>
+          <div class="bg-sky-50 border border-sky-100 rounded-xl p-3 text-xs">
+            <strong class="text-sky-800 block mb-0.5">${caseData.intraOp.implant ? 'Phương tiện KHX:' : 'Loại vạt:'}</strong>
+            <span class="text-slate-600">${caseData.intraOp.implant || caseData.intraOp.flapType}</span>
+          </div>
+        </div>
+
+        <!-- Phase 3: Post-op -->
+        <div class="card p-5 flex flex-col justify-between">
+          <div>
+            <div class="w-8 h-8 rounded-xl bg-emerald-50 text-emerald-700 font-bold text-sm flex items-center justify-center mb-3">3</div>
+            <h3 class="text-base font-bold text-slate-900 mb-3">Sau Mổ & Phục Hồi</h3>
+            <div class="space-y-2.5 text-xs text-slate-600 mb-4">
+              <div><strong class="text-slate-800 block">Tiến trình phục hồi:</strong>${caseData.postOp.recovery}</div>
+            </div>
+          </div>
+          <div>
+            ${caseData.postOp.imaging ? `<div class="rounded-xl overflow-hidden bg-slate-100 aspect-video mb-1.5"><img src="${caseData.postOp.imaging}" alt="Sau mổ" class="w-full h-full object-cover"></div>` : ''}
+            <p class="text-[11px] text-slate-400 italic">${caseData.postOp.imagingDesc}</p>
+          </div>
+        </div>
+
+      </div>
+    `;
+
+    initBeforeAfterSliders();
+  });
+</script>
+</body>
+</html>
