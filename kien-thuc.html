@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiến Thức Y Khoa | ThS.BS. Nguyễn Hữu Sâm — BV Bạch Mai</title>
+  <meta name="description" content="Bài viết chuyên môn: phác đồ AO/ASIF, kỹ thuật vi phẫu, cẩm nang phục hồi chức năng sau phẫu thuật — ThS.BS. Nguyễn Hữu Sâm.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Be Vietnam Pro','sans-serif']}}}}</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#F8FBFF]">
+
+<!-- Floating Zalo Button -->
+<div class="zalo-fab" id="zaloFab">
+  <div class="zalo-qr-popup" id="zaloPopup">
+    <p class="text-[11px] font-bold text-slate-400 uppercase tracking-widest mb-3 text-center">Quét QR · Kết nối Zalo</p>
+    <div class="bg-slate-50 rounded-2xl p-2 mb-3 border border-slate-100">
+      <img src="assets/images/zalo-qr.jpg" alt="Zalo QR Dr Sâm Nguyễn" class="w-full h-auto rounded-xl block">
+    </div>
+    <p class="text-sm font-bold text-slate-700 text-center mb-0.5">Dr Sâm Nguyễn</p>
+    <p class="text-xs text-slate-400 text-center mb-3">Phòng khám BV Bạch Mai</p>
+    <a href="https://zalo.me/0373030031" target="_blank" class="btn btn-zalo w-full justify-center text-sm py-2.5">Mở Zalo Chat</a>
+  </div>
+  <button onclick="document.getElementById('zaloPopup').classList.toggle('visible')" class="zalo-fab-btn">
+    <div class="zalo-pulse-ring"></div>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.03 2 11c0 2.87 1.5 5.42 3.86 7.08-.18.82-.69 2.53-1.6 3.65 1.53-.13 3.42-.74 4.77-1.66.94.27 1.94.43 2.97.43 5.52 0 10-4.03 10-9s-4.48-9-10-9z"/></svg>
+    <span>Chat Zalo Bác Sĩ</span>
+  </button>
+</div>
+
+<!-- Header Navigation -->
+<header class="nav-light sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-[70px] gap-4">
+      <a href="index.html" class="flex items-center gap-3 shrink-0">
+        <div class="nhs-badge">NHS</div>
+        <div>
+          <p class="text-[15px] font-bold text-slate-800 leading-tight">ThS.BS. Nguyễn Hữu Sâm</p>
+          <p class="text-[11px] text-slate-400 font-medium">Bệnh viện Bạch Mai · Hà Nội</p>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-1">
+        <a href="index.html" class="nav-link">Trang chủ</a>
+        <a href="chan-thuong.html" class="nav-link">Chấn thương</a>
+        <a href="tao-hinh.html" class="nav-link">Tạo hình</a>
+        <a href="kien-thuc.html" class="nav-link active">Kiến thức Y khoa</a>
+      </nav>
+      <div class="flex items-center gap-2 shrink-0">
+        <a href="https://zalo.me/0373030031" target="_blank" class="btn btn-zalo hidden md:inline-flex py-2.5 px-5 text-sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.03 2 11c0 2.87 1.5 5.42 3.86 7.08-.18.82-.69 2.53-1.6 3.65 1.53-.13 3.42-.74 4.77-1.66.94.27 1.94.43 2.97.43 5.52 0 10-4.03 10-9s-4.48-9-10-9z"/></svg>
+          0373.030.031
+        </a>
+        <a href="index.html#contact" class="btn btn-light hidden lg:inline-flex py-2.5 px-5 text-sm">Liên hệ</a>
+        <button id="mobileMenuBtn" class="md:hidden p-2 text-slate-500 hover:text-slate-700 rounded-lg">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden pb-4 pt-2 border-t border-slate-100">
+      <nav class="flex flex-col gap-0.5">
+        <a href="index.html" class="nav-link">Trang chủ</a>
+        <a href="chan-thuong.html" class="nav-link">Chấn thương chỉnh hình</a>
+        <a href="tao-hinh.html" class="nav-link">Tạo hình vi phẫu</a>
+        <a href="kien-thuc.html" class="nav-link active">Kiến thức Y khoa</a>
+        <div class="mt-2 px-2">
+          <a href="https://zalo.me/0373030031" target="_blank" class="btn btn-zalo w-full justify-center py-3 text-sm">
+            💬 Zalo: 0373.030.031
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- Page Hero Banner -->
+<section class="hero-section py-10 border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center gap-2 text-xs text-slate-400 mb-3">
+      <a href="index.html" class="hover:text-violet-600">Trang chủ</a>
+      <span>/</span>
+      <span class="text-slate-600 font-medium">Kiến thức Y khoa</span>
+    </div>
+    <p class="section-eyebrow violet mb-2">Phân hệ 03 · Kiến thức y khoa</p>
+    <h1 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-2">Bài Viết Chuyên Môn & Phác Đồ</h1>
+    <p class="text-slate-500 text-sm max-w-2xl">Tổng hợp các phác đồ chuẩn AO/ASIF, kỹ thuật mổ vi phẫu tạo hình và cẩm nang phục hồi chức năng sau mổ cho đồng nghiệp và bệnh nhân.</p>
+  </div>
+</section>
+
+<!-- Filter & Search Bar -->
+<section class="py-6 bg-white border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col sm:flex-row gap-3 items-center justify-between">
+      <div class="relative w-full sm:w-80">
+        <input id="search-input" type="search" placeholder="Tìm bài viết, phác đồ, kỹ thuật..."
+          class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 pl-10 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:border-violet-400 transition-colors">
+        <svg class="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+      </div>
+      <div class="text-xs text-slate-400">
+        Tài liệu phục vụ mục đích nghiên cứu & giáo dục sức khỏe
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Articles Grid -->
+<main class="py-12 bg-[#F8FBFF]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div id="articles-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+    <div id="no-results" class="hidden text-center py-16">
+      <p class="text-slate-400 text-sm">Không tìm thấy bài viết phù hợp với từ khóa.</p>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer-dark py-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="nhs-badge">NHS</div>
+        <div>
+          <p class="text-sm font-bold text-white">ThS.BS. Nguyễn Hữu Sâm</p>
+          <p class="text-xs text-slate-400 mt-0.5">Khoa CTCH & Cột sống · Bệnh viện Bạch Mai · "First do no harm"</p>
+        </div>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400">
+        <a href="index.html" class="hover:text-white transition-colors">Trang chủ</a>
+        <a href="chan-thuong.html" class="hover:text-sky-400 transition-colors">Chấn thương</a>
+        <a href="tao-hinh.html" class="hover:text-teal-400 transition-colors">Tạo hình</a>
+        <a href="https://zalo.me/0373030031" target="_blank" class="hover:text-white transition-colors">Zalo: 0373030031</a>
+      </div>
+      <p class="text-xs text-slate-500 text-center md:text-right">© 2025 ThS.BS. Nguyễn Hữu Sâm<br>Xuất bản qua GitHub Pages</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="js/articles-data.js"></script>
+<script src="js/app.js"></script>
+<script>
+  document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+  });
+  document.addEventListener('click', e => {
+    if (!document.getElementById('zaloFab').contains(e.target)) {
+      document.getElementById('zaloPopup').classList.remove('visible');
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const grid = document.getElementById('articles-grid');
+    const noResults = document.getElementById('no-results');
+    const searchInput = document.getElementById('search-input');
+
+    function render() {
+      const q = searchInput.value.toLowerCase().trim();
+      const articles = MEDICAL_ARTICLES.filter(a => {
+        if (!q) return true;
+        return a.title.toLowerCase().includes(q) || a.summary.toLowerCase().includes(q) || a.tags.join(' ').toLowerCase().includes(q);
+      });
+      grid.innerHTML = articles.map(a => createArticleCardHtml(a)).join('');
+      noResults.classList.toggle('hidden', articles.length > 0);
+    }
+
+    searchInput.addEventListener('input', render);
+    render();
+  });
+</script>
+</body>
+</html>
