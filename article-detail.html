@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi Tiết Bài Viết Y Khoa | ThS.BS. Nguyễn Hữu Sâm — BV Bạch Mai</title>
+  <meta name="description" content="Bài viết chuyên môn y khoa, phác đồ điều trị và tài liệu học thuật bởi ThS.BS. Nguyễn Hữu Sâm — BV Bạch Mai.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Be Vietnam Pro','sans-serif']}}}}</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#F8FBFF] flex flex-col min-h-screen">
+
+<!-- Floating Zalo Button -->
+<div class="zalo-fab" id="zaloFab">
+  <div class="zalo-qr-popup" id="zaloPopup">
+    <p class="text-[11px] font-bold text-slate-400 uppercase tracking-widest mb-3 text-center">Quét QR · Kết nối Zalo</p>
+    <div class="bg-slate-50 rounded-2xl p-2 mb-3 border border-slate-100">
+      <img src="assets/images/zalo-qr.jpg" alt="Zalo QR Dr Sâm Nguyễn" class="w-full h-auto rounded-xl block">
+    </div>
+    <p class="text-sm font-bold text-slate-700 text-center mb-0.5">Dr Sâm Nguyễn</p>
+    <p class="text-xs text-slate-400 text-center mb-3">Phòng khám BV Bạch Mai</p>
+    <a href="https://zalo.me/0373030031" target="_blank" class="btn btn-zalo w-full justify-center text-sm py-2.5">Mở Zalo Chat</a>
+  </div>
+  <button onclick="document.getElementById('zaloPopup').classList.toggle('visible')" class="zalo-fab-btn">
+    <div class="zalo-pulse-ring"></div>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.03 2 11c0 2.87 1.5 5.42 3.86 7.08-.18.82-.69 2.53-1.6 3.65 1.53-.13 3.42-.74 4.77-1.66.94.27 1.94.43 2.97.43 5.52 0 10-4.03 10-9s-4.48-9-10-9z"/></svg>
+    <span>Chat Zalo Bác Sĩ</span>
+  </button>
+</div>
+
+<!-- Header Navigation -->
+<header class="nav-light sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-[70px] gap-4">
+      <a href="index.html" class="flex items-center gap-3 shrink-0">
+        <div class="nhs-badge">NHS</div>
+        <div>
+          <p class="text-[15px] font-bold text-slate-800 leading-tight">ThS.BS. Nguyễn Hữu Sâm</p>
+          <p class="text-[11px] text-slate-400 font-medium">Bệnh viện Bạch Mai · Hà Nội</p>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-1">
+        <a href="index.html" class="nav-link">Trang chủ</a>
+        <a href="chan-thuong.html" class="nav-link">Chấn thương</a>
+        <a href="tao-hinh.html" class="nav-link">Tạo hình</a>
+        <a href="kien-thuc.html" class="nav-link active">Kiến thức Y khoa</a>
+      </nav>
+      <div class="flex items-center gap-2 shrink-0">
+        <a href="https://zalo.me/0373030031" target="_blank" class="btn btn-zalo hidden md:inline-flex py-2.5 px-5 text-sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.03 2 11c0 2.87 1.5 5.42 3.86 7.08-.18.82-.69 2.53-1.6 3.65 1.53-.13 3.42-.74 4.77-1.66.94.27 1.94.43 2.97.43 5.52 0 10-4.03 10-9s-4.48-9-10-9z"/></svg>
+          0373.030.031
+        </a>
+        <button id="mobileMenuBtn" class="md:hidden p-2 text-slate-500 hover:text-slate-700 rounded-lg">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden pb-4 pt-2 border-t border-slate-100">
+      <nav class="flex flex-col gap-0.5">
+        <a href="index.html" class="nav-link">Trang chủ</a>
+        <a href="chan-thuong.html" class="nav-link">Chấn thương chỉnh hình</a>
+        <a href="tao-hinh.html" class="nav-link">Tạo hình vi phẫu</a>
+        <a href="kien-thuc.html" class="nav-link active">Kiến thức Y khoa</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- Article Detail Content -->
+<main class="flex-grow py-10">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Top toolbar -->
+    <div class="flex items-center justify-between mb-6">
+      <a href="kien-thuc.html" class="btn btn-light text-xs py-2 px-4 shadow-xs">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" d="M10 19l-7-7 7-7M3 12h18"/></svg>
+        Quay lại danh mục bài viết
+      </a>
+      <div id="article-category-badge" class="tag tag-violet text-xs font-semibold">Chuyên đề y khoa</div>
+    </div>
+
+    <!-- Article Container -->
+    <article id="article-detail-content" class="card p-6 sm:p-10 space-y-6">
+      <div class="text-center py-20">
+        <div class="w-10 h-10 border-3 border-violet-600 border-t-transparent rounded-full animate-spin mx-auto mb-3"></div>
+        <p class="text-xs text-slate-400">Đang tải nội dung bài viết...</p>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer-dark py-10 mt-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="nhs-badge">NHS</div>
+        <div>
+          <p class="text-sm font-bold text-white">ThS.BS. Nguyễn Hữu Sâm</p>
+          <p class="text-xs text-slate-400 mt-0.5">Khoa CTCH & Cột sống · Bệnh viện Bạch Mai · "First do no harm"</p>
+        </div>
+      </div>
+      <p class="text-xs text-slate-500 text-center md:text-right">© 2025 ThS.BS. Nguyễn Hữu Sâm<br>Xuất bản qua GitHub Pages</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="js/articles-data.js"></script>
+<script src="js/app.js"></script>
+<script>
+  document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+  });
+  document.addEventListener('click', e => {
+    if (!document.getElementById('zaloFab').contains(e.target)) {
+      document.getElementById('zaloPopup').classList.remove('visible');
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    let artId = urlParams.get('id');
+    if (!artId && MEDICAL_ARTICLES.length > 0) artId = MEDICAL_ARTICLES[0].id;
+
+    const article = getArticleById(artId);
+    const container = document.getElementById('article-detail-content');
+    const badge = document.getElementById('article-category-badge');
+
+    if (!article) {
+      container.innerHTML = `
+        <div class="text-center py-16">
+          <h2 class="text-xl font-bold text-slate-800 mb-2">Không tìm thấy bài viết này</h2>
+          <p class="text-sm text-slate-400 mb-6">Mã bài viết [${artId}] không tồn tại.</p>
+          <a href="kien-thuc.html" class="btn btn-primary">Về trang kiến thức</a>
+        </div>`;
+      return;
+    }
+
+    badge.textContent = article.category;
+    const tagsHtml = article.tags.map(t => `<span class="tag tag-gray text-xs">${t}</span>`).join(' ');
+
+    container.innerHTML = `
+      <!-- Header -->
+      <div class="border-b border-slate-100 pb-6 mb-6">
+        <div class="flex items-center gap-3 text-xs text-slate-400 mb-3">
+          <span>Tác giả: <strong class="text-slate-700">${article.author}</strong></span>
+          <span>·</span>
+          <span>${article.date}</span>
+          <span>·</span>
+          <span>${article.readTime}</span>
+        </div>
+
+        <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight leading-snug mb-4">
+          ${article.title}
+        </h1>
+
+        <p class="text-sm text-slate-600 italic bg-slate-50 border-l-3 border-violet-500 p-4 rounded-r-xl leading-relaxed">
+          ${article.summary}
+        </p>
+      </div>
+
+      <div class="rounded-2xl overflow-hidden aspect-[21/9] mb-8 bg-slate-100 shadow-sm">
+        <img src="${article.coverImage}" alt="${article.title}" class="w-full h-full object-cover">
+      </div>
+
+      <!-- Article Rich Content Body -->
+      <div class="text-slate-700 leading-relaxed text-sm sm:text-base space-y-4">
+        ${article.content}
+      </div>
+
+      <!-- Tags -->
+      <div class="pt-6 mt-8 border-t border-slate-100">
+        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2.5">Từ khóa chuyên môn</div>
+        <div class="flex flex-wrap gap-1.5">${tagsHtml}</div>
+      </div>`;
+  });
+</script>
+</body>
+</html>
