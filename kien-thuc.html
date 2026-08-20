@@ -103,10 +103,11 @@
 
       <!-- Filter Buttons -->
       <div class="flex flex-wrap items-center gap-1.5 w-full md:w-auto" id="filter-buttons">
-        <button class="filter-btn active text-xs font-semibold px-3 py-1.5 rounded-lg bg-violet-600 text-white transition-all" data-category="all">Tất cả (13)</button>
+        <button class="filter-btn active text-xs font-semibold px-3 py-1.5 rounded-lg bg-violet-600 text-white transition-all shadow-xs" data-category="all">Tất cả (13)</button>
         <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-lg bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all" data-category="Phẫu thuật cổ tay">Phẫu thuật Cổ tay (10)</button>
+        <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-lg bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all" data-category="Kỹ thuật phẫu thuật">Kỹ thuật mổ & Vi phẫu</button>
         <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-lg bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all" data-category="Phác đồ & Guideline">Phác đồ & Guideline</button>
-        <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-lg bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all" data-category="Kỹ thuật Vi phẫu & Bàn tay">Vi phẫu & Bàn tay</button>
+        <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-lg bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all" data-category="Chẩn đoán">Hình ảnh & Nội soi</button>
       </div>
 
     </div>
@@ -146,8 +147,8 @@
 </footer>
 
 <!-- Scripts -->
-<script src="js/articles-data.js?v=2.2"></script>
-<script src="js/app.js?v=2.2"></script>
+<script src="js/articles-data.js?v=2.3"></script>
+<script src="js/app.js?v=2.3"></script>
 <script>
   document.getElementById('mobileMenuBtn').addEventListener('click', () => {
     document.getElementById('mobileMenu').classList.toggle('hidden');
@@ -171,7 +172,11 @@
         // Category filter
         let matchCat = true;
         if (activeCategory === 'Phẫu thuật cổ tay') {
-          matchCat = a.tags.some(t => t.toLowerCase().includes('cổ tay') || t.toLowerCase().includes('campbell') || t.toLowerCase().includes('xương thuyền') || t.toLowerCase().includes('tfcc') || t.toLowerCase().includes('kienböck') || t.toLowerCase().includes('mayfield'));
+          matchCat = a.tags.some(t => t.toLowerCase().includes('cổ tay') || t.toLowerCase().includes('campbell') || t.toLowerCase().includes('xương thuyền') || t.toLowerCase().includes('tfcc') || t.toLowerCase().includes('kienböck') || t.toLowerCase().includes('mayfield') || t.toLowerCase().includes('slac'));
+        } else if (activeCategory === 'Kỹ thuật phẫu thuật') {
+          matchCat = a.category.includes('Kỹ thuật') || a.category.includes('Vi phẫu') || a.category.includes('Phẫu thuật');
+        } else if (activeCategory === 'Chẩn đoán') {
+          matchCat = a.category.includes('hình ảnh') || a.category.includes('Nội soi') || a.category.includes('Khám');
         } else if (activeCategory !== 'all') {
           matchCat = a.category === activeCategory;
         }
