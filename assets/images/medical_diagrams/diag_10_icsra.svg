@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <rect width="800" height="450" fill="#0f172a" rx="16"/>
+  <text x="400" y="45" fill="#f8fafc" font-family="Inter, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">GHÉP XƯƠNG CÓ CUỐNG MẠCH 1,2-ICSRA (ZAIDEMBERG)</text>
+  <text x="400" y="70" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12" text-anchor="middle">Vascularized Bone Graft for Scaphoid Nonunion with Avascular Proximal Pole (Technique 69-11)</text>
+
+  <!-- Left: Anatomical Harvest -->
+  <g transform="translate(40, 90)">
+    <rect width="340" height="320" rx="12" fill="#1e293b" stroke="#38bdf8"/>
+    <text x="170" y="30" fill="#38bdf8" font-family="Inter, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">GIẢI PHẪU CUỐNG MẠCH 1,2-ICSRA</text>
+    
+    <rect x="20" y="50" width="300" height="250" rx="8" fill="#0f172a"/>
+    <text x="35" y="75" fill="#f43f5e" font-family="Inter, sans-serif" font-size="11" font-weight="bold">• Động mạch 1,2-ICSRA:</text>
+    <text x="35" y="95" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="10">Chạy trên mạc giữ gân duỗi giữa khoang 1 (APL/EPB) &amp; khoang 2 (ECRL/ECRB)</text>
+    
+    <text x="35" y="125" fill="#4ade80" font-family="Inter, sans-serif" font-size="11" font-weight="bold">• Mảnh ghép xương vỏ - xốp:</text>
+    <text x="35" y="145" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="10">Lấy từ mặt lưng - ngoài đầu dưới xương quay</text>
+    <text x="35" y="165" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="10">Kích thước: 10 x 5 x 5 mm mang theo dải cuống mạch</text>
+
+    <text x="35" y="195" fill="#fde047" font-family="Inter, sans-serif" font-size="11" font-weight="bold">• Chỉ định tuyệt đối:</text>
+    <text x="35" y="215" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="10">Khớp giả xương thuyền kèm cực gần HOẠI TỬ VÔ MẠCH (AVN)</text>
+    <text x="35" y="235" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="10">Tỷ lệ liền xương đạt 85% - 90% (vượt trội ghép xốp tự do)</text>
+  </g>
+
+  <!-- Right: Step-by-Step Technique -->
+  <g transform="translate(420, 90)">
+    <rect width="340" height="320" rx="12" fill="#1e293b" stroke="#38bdf8"/>
+    <text x="170" y="30" fill="#38bdf8" font-family="Inter, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">QUY TRÌNH PHẪU THUẬT TỪNG BƯỚC (69-11)</text>
+    
+    <rect x="20" y="55" width="300" height="245" rx="8" fill="#0f172a" stroke="#334155"/>
+    <text x="35" y="80" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="10">1. Đường mổ mặt lưng dọc củ Lister sang khoang 1 &amp; 2</text>
+    <text x="35" y="102" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="10">2. Dưới kính lúp vi phẫu, xác định ĐM 1,2-ICSRA</text>
+    <text x="35" y="124" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="10">3. Rạch màng xương để lại dải mô mềm 5mm quanh mạch</text>
+    <text x="35" y="146" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="10">4. Đục mảnh xương vỏ-xốp, giải phóng cuống mạch về gốc</text>
+    <text x="35" y="168" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="10">5. Nạo sạch mô xơ khớp giả và đục tạo hốc ở xương thuyền</text>
+    <text x="35" y="190" fill="#4ade80" font-family="Inter, sans-serif" font-size="10" font-weight="bold">6. Xoay mảnh ghép vào ổ khớp giả, cố định bằng K-wire 1.1mm</text>
+    
+    <line x1="35" y1="210" x2="305" y2="210" stroke="#334155"/>
+    <text x="35" y="230" fill="#f87171" font-family="Inter, sans-serif" font-size="10" font-weight="bold">⚠️ Lưu ý vi phẫu:</text>
+    <text x="35" y="250" fill="#fecaca" font-family="Inter, sans-serif" font-size="9">Tuyệt đối không làm xoắn vặn cuống mạch khi xoay mảnh ghép</text>
+    <text x="35" y="268" fill="#fecaca" font-family="Inter, sans-serif" font-size="9">Nhỏ thuốc giãn mạch Lidocaine / Papaverine tại chỗ</text>
+  </g>
+</svg>
