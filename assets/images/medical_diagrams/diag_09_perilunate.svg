@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <rect width="800" height="450" fill="#0f172a" rx="16"/>
+  <text x="400" y="45" fill="#f8fafc" font-family="Inter, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">TRẬT QUANH XƯƠNG NGUYỆT &amp; TÁI TẠO 3LT MODIFIED BRUNELLI</text>
+  <text x="400" y="70" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12" text-anchor="middle">Mayfield Stages I-IV &amp; 3-Ligament Tenodesis using FCR Tendon Strip (Campbell 69-45, 69-48)</text>
+
+  <!-- Left: Mayfield Stages -->
+  <g transform="translate(40, 90)">
+    <rect width="340" height="320" rx="12" fill="#1e293b" stroke="#ef4444"/>
+    <text x="170" y="30" fill="#f87171" font-family="Inter, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">4 GIAI ĐOẠN MAYFIELD (PERILUNATE)</text>
+    
+    <rect x="20" y="50" width="300" height="50" rx="6" fill="#0f172a"/>
+    <text x="30" y="70" fill="#fbbf24" font-family="Inter, sans-serif" font-size="11" font-weight="bold">Stage I:</text>
+    <text x="85" y="70" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">Rách SLIL hoặc gãy ngang xương thuyền</text>
+
+    <rect x="20" y="110" width="300" height="50" rx="6" fill="#0f172a"/>
+    <text x="30" y="130" fill="#fb923c" font-family="Inter, sans-serif" font-size="11" font-weight="bold">Stage II:</text>
+    <text x="90" y="130" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">Trật khớp Đầu - Nguyệt (Capitate trượt sau)</text>
+
+    <rect x="20" y="170" width="300" height="50" rx="6" fill="#0f172a"/>
+    <text x="30" y="190" fill="#f87171" font-family="Inter, sans-serif" font-size="11" font-weight="bold">Stage III:</text>
+    <text x="95" y="190" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">Rách LTIL &amp; Bao khớp mu (Trật quanh nguyệt)</text>
+
+    <rect x="20" y="230" width="300" height="65" rx="6" fill="#450a0a" stroke="#ef4444"/>
+    <text x="30" y="250" fill="#ef4444" font-family="Inter, sans-serif" font-size="11" font-weight="bold">Stage IV: CẤP CỨU MỔ MỞ ĐƯỜNG ĐÔI</text>
+    <text x="30" y="270" fill="#fecaca" font-family="Inter, sans-serif" font-size="10">Xương nguyệt rơi vào ống cổ tay &rarr; Chèn ép TK giữa</text>
+    <text x="30" y="285" fill="#fca5a5" font-family="Inter, sans-serif" font-size="9">Giải phóng ống cổ tay + Nắn xương nguyệt mặt gan &amp; lưng</text>
+  </g>
+
+  <!-- Right: Modified Brunelli 3LT -->
+  <g transform="translate(420, 90)">
+    <rect width="340" height="320" rx="12" fill="#1e293b" stroke="#38bdf8"/>
+    <text x="170" y="30" fill="#38bdf8" font-family="Inter, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">KỸ THUẬT TÁI TẠO DÂY CHẰNG 3LT (69-48)</text>
+    
+    <rect x="20" y="55" width="300" height="245" rx="8" fill="#0f172a" stroke="#334155"/>
+    <text x="35" y="80" fill="#fde047" font-family="Inter, sans-serif" font-size="11" font-weight="bold">Chỉ định: Mất vững SLIL mạn tính chưa thoái hóa</text>
+    
+    <text x="35" y="105" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="10">1. Lấy dải 1/3 ngoài gân FCR giữ điểm bám nền đốt bàn II</text>
+    <text x="35" y="125" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="10">2. Khoan đường hầm 2.5mm qua thân xương thuyền lên lưng</text>
+    <text x="35" y="145" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="10">3. Luồn gân FCR qua hầm xương nắn ngửa xương thuyền (sửa DISI)</text>
+    <text x="35" y="165" fill="#4ade80" font-family="Inter, sans-serif" font-size="10" font-weight="bold">4. Neo chỉ dải gân vào cực lưng XƯƠNG NGUYỆT</text>
+    <text x="35" y="185" fill="#38bdf8" font-family="Inter, sans-serif" font-size="10" font-weight="bold">5. Kéo dải gân khâu tăng cường vào DÂY CHẰNG DRC</text>
+    
+    <line x1="35" y1="205" x2="305" y2="205" stroke="#334155"/>
+    <text x="35" y="225" fill="#fbbf24" font-family="Inter, sans-serif" font-size="10" font-weight="bold">Cố định K-wire 1.2mm:</text>
+    <text x="35" y="245" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="10">Xuyên 2 đinh giữ khớp Scapholunate &amp; Scaphocapitate</text>
+    <text x="35" y="265" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="10">Rút đinh K-wire sau 8 tuần, tập DTM phục hồi</text>
+  </g>
+</svg>
