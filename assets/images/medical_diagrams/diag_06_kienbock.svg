@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <rect width="800" height="450" fill="#0f172a" rx="16"/>
+  <text x="400" y="45" fill="#f8fafc" font-family="Inter, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">BỆNH KIENBÖCK &amp; PHẪU THUẬT CẮT NGẮN XƯƠNG QUAY (RSO)</text>
+  <text x="400" y="70" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12" text-anchor="middle">Phân loại Lichtman I-IV &amp; Kỹ thuật Giảm tải Xương nguyệt (Campbell Technique 69-33)</text>
+
+  <!-- Left: Lichtman Stages -->
+  <g transform="translate(40, 90)">
+    <rect width="340" height="320" rx="12" fill="#1e293b" stroke="#38bdf8"/>
+    <text x="170" y="30" fill="#38bdf8" font-family="Inter, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">PHÂN LOẠI LICHTMAN (5 GIAI ĐOẠN)</text>
+    
+    <rect x="20" y="50" width="300" height="45" rx="6" fill="#0f172a"/>
+    <text x="30" y="70" fill="#4ade80" font-family="Inter, sans-serif" font-size="11" font-weight="bold">Stage I:</text>
+    <text x="85" y="70" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">X-quang bình thường, MRI giảm T1W</text>
+    <text x="30" y="85" fill="#94a3b8" font-family="Inter, sans-serif" font-size="10">Điều trị: Bất động bột 3 tháng hoặc RSO</text>
+
+    <rect x="20" y="105" width="300" height="45" rx="6" fill="#0f172a"/>
+    <text x="30" y="125" fill="#facc15" font-family="Inter, sans-serif" font-size="11" font-weight="bold">Stage II:</text>
+    <text x="85" y="125" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">Xơ chai xương nguyệt, CHƯA SỤP LÚN</text>
+    <text x="30" y="140" fill="#94a3b8" font-family="Inter, sans-serif" font-size="10">Điều trị: Cắt ngắn xương quay (RSO) giảm tải</text>
+
+    <rect x="20" y="160" width="300" height="45" rx="6" fill="#0f172a"/>
+    <text x="30" y="180" fill="#fb923c" font-family="Inter, sans-serif" font-size="11" font-weight="bold">Stage IIIA:</text>
+    <text x="95" y="180" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">Xương nguyệt sụp vỡ, CỔ TAY CÒN VỮNG</text>
+    <text x="30" y="195" fill="#94a3b8" font-family="Inter, sans-serif" font-size="10">Điều trị: RSO hoặc Ghép xương có cuống mạch</text>
+
+    <rect x="20" y="215" width="300" height="45" rx="6" fill="#0f172a"/>
+    <text x="30" y="235" fill="#f87171" font-family="Inter, sans-serif" font-size="11" font-weight="bold">Stage IIIB:</text>
+    <text x="95" y="235" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">Xương nguyệt sụp + MẤT VỮNG CỐ ĐỊNH (DISI)</text>
+    <text x="30" y="250" fill="#94a3b8" font-family="Inter, sans-serif" font-size="10">Điều trị: PRC hoặc Hàn khớp STT / 4 góc</text>
+
+    <rect x="20" y="270" width="300" height="35" rx="6" fill="#0f172a"/>
+    <text x="30" y="290" fill="#ef4444" font-family="Inter, sans-serif" font-size="11" font-weight="bold">Stage IV:</text>
+    <text x="85" y="290" fill="#fca5a5" font-family="Inter, sans-serif" font-size="11">Thoái hóa toàn bộ cổ tay &rarr; Hàn toàn phần</text>
+  </g>
+
+  <!-- Right: Radial Shortening Technique -->
+  <g transform="translate(420, 90)">
+    <rect width="340" height="320" rx="12" fill="#1e293b" stroke="#38bdf8"/>
+    <text x="170" y="30" fill="#38bdf8" font-family="Inter, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">KỸ THUẬT CẮT NGẮN XƯƠNG QUAY (RSO)</text>
+    
+    <rect x="20" y="55" width="300" height="245" rx="8" fill="#0f172a" stroke="#334155"/>
+    <text x="35" y="80" fill="#38bdf8" font-family="Inter, sans-serif" font-size="12" font-weight="bold">Cơ chế tác dụng:</text>
+    <text x="35" y="100" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">• Áp dụng khi: Ulnar negative variance &le; -2 mm</text>
+    <text x="35" y="120" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">• Cắt ngắn: Lấy bỏ 2.0 - 2.5 mm thân xương quay</text>
+    <text x="35" y="140" fill="#4ade80" font-family="Inter, sans-serif" font-size="11" font-weight="bold">• Giảm 45% tải trọng nén ép lên xương nguyệt</text>
+
+    <line x1="35" y1="155" x2="305" y2="155" stroke="#334155"/>
+
+    <text x="35" y="175" fill="#fde047" font-family="Inter, sans-serif" font-size="12" font-weight="bold">Quy trình phẫu thuật (Henry approach):</text>
+    <text x="35" y="195" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">1. Đường mổ mặt gan giữa gân FCR và ĐM quay</text>
+    <text x="35" y="215" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">2. Áp nẹp LCP 3.5mm mặt gan, khoan vít định vị</text>
+    <text x="35" y="235" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">3. Dùng cưa rung có tưới nước cắt 2 đường song song</text>
+    <text x="35" y="255" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">4. Kẹp nén ép diện cắt xương và bắt vít khóa vững</text>
+    <text x="35" y="280" fill="#86efac" font-family="Inter, sans-serif" font-size="11" font-weight="bold">Liền xương sau 6-8 tuần, giảm đau rõ rệt 90%</text>
+  </g>
+</svg>
