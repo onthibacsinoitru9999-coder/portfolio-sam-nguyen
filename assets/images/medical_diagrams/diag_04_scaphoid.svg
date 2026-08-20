@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <rect width="800" height="450" fill="#0f172a" rx="16"/>
+  <text x="400" y="45" fill="#f8fafc" font-family="Inter, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">GÃY XƯƠNG THUYỀN: HƯỚNG BẮT VÍT NÉN &amp; CẤP MÁU NGƯỢC DÒNG</text>
+  <text x="400" y="70" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12" text-anchor="middle">Retrograde Vascular Supply &amp; Central 1/3 Screw Placement (Campbell 69-8, 69-10)</text>
+
+  <!-- Left: Blood Supply Diagram -->
+  <g transform="translate(50, 90)">
+    <rect width="320" height="320" rx="12" fill="#1e293b" stroke="#334155"/>
+    <text x="160" y="30" fill="#38bdf8" font-family="Inter, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">ĐẶC ĐIỂM CẤP MÁU NGƯỢC DÒNG</text>
+    
+    <!-- Scaphoid Shape -->
+    <path d="M 120,70 C 180,60 220,90 230,150 C 240,210 200,260 140,270 C 90,260 80,210 90,160 C 100,110 90,80 120,70 Z" fill="#0369a1" stroke="#38bdf8" stroke-width="2"/>
+    
+    <!-- Dorsal Ridge Artery -->
+    <path d="M 240,160 L 190,180 L 140,230" stroke="#ef4444" stroke-width="4" fill="none"/>
+    <polygon points="135,235 145,225 145,238" fill="#ef4444"/>
+    <text x="235" y="150" fill="#fca5a5" font-family="Inter, sans-serif" font-size="10" font-weight="bold">ĐM Quay bờ lưng (70-80%)</text>
+    
+    <!-- Fracture Line -->
+    <line x1="90" y1="170" x2="230" y2="170" stroke="#fbbf24" stroke-width="3" stroke-dasharray="5,4"/>
+    <text x="160" y="165" fill="#fef08a" font-family="Inter, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Đường Gãy Eo (Waist)</text>
+    
+    <!-- Proximal Pole Necrosis -->
+    <path d="M 120,70 C 180,60 220,90 215,165 L 95,165 C 100,110 90,80 120,70 Z" fill="#7f1d1d" opacity="0.6"/>
+    <text x="160" y="120" fill="#fecaca" font-family="Inter, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">CỰC GẦN THIẾU MÁU</text>
+    <text x="160" y="135" fill="#fca5a5" font-family="Inter, sans-serif" font-size="9" text-anchor="middle">(Nguy cơ Hoại tử AVN 30-100%)</text>
+  </g>
+
+  <!-- Right: Screw Approach Trajectory -->
+  <g transform="translate(420, 90)">
+    <rect width="340" height="320" rx="12" fill="#1e293b" stroke="#334155"/>
+    <text x="170" y="30" fill="#38bdf8" font-family="Inter, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">LỰA CHỌN ĐƯỜNG MỔ &amp; HƯỚNG BẮT VÍT</text>
+    
+    <!-- Volar Approach Box -->
+    <rect x="20" y="55" width="300" height="115" rx="8" fill="#0f172a" stroke="#22c55e"/>
+    <text x="35" y="80" fill="#4ade80" font-family="Inter, sans-serif" font-size="12" font-weight="bold">1. ĐƯỜNG MỔ MẶT GAN (VOLAR APPROACH)</text>
+    <text x="35" y="100" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">• Chỉ định: Gãy eo (Waist) &amp; Gãy cực xa</text>
+    <text x="35" y="120" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">• Tư thế: Duỗi cổ tay + Nghiêng quay</text>
+    <text x="35" y="140" fill="#86efac" font-family="Inter, sans-serif" font-size="11">• Ưu điểm: Bảo tồn nguyên vẹn mạch máu mặt lưng</text>
+
+    <!-- Dorsal Approach Box -->
+    <rect x="20" y="185" width="300" height="115" rx="8" fill="#0f172a" stroke="#38bdf8"/>
+    <text x="35" y="210" fill="#38bdf8" font-family="Inter, sans-serif" font-size="12" font-weight="bold">2. ĐƯỜNG MỔ MẶT LƯNG (DORSAL APPROACH)</text>
+    <text x="35" y="230" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">• Chỉ định: GÃY CỰC GẦN (Proximal Pole)</text>
+    <text x="35" y="250" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">• Tư thế: Gập cổ tay tối đa + Nghiêng trụ</text>
+    <text x="35" y="270" fill="#7dd3fc" font-family="Inter, sans-serif" font-size="11">• Nguyên tắc: Vít đi vào trục 1/3 trung tâm xương</text>
+  </g>
+</svg>
