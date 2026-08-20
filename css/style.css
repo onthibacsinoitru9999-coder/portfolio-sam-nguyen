@@ -1,0 +1,386 @@
+/* ============================================================
+   DR. NGUYEN HUU SAM — SURGICAL PORTFOLIO
+   Design System v4.0 · Light · Warm · Chill · Accessible 2026
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+/* ── Variables ── */
+:root {
+  --bg:          #F8FBFF;
+  --bg-alt:      #F1F5F9;
+  --bg-hero:     linear-gradient(140deg, #EFF6FF 0%, #F0FDFA 60%, #FAFAF8 100%);
+  --white:       #FFFFFF;
+  --border:      #E2E8F0;
+  --border-soft: #F1F5F9;
+
+  --text:        #1E293B;
+  --text-2:      #4B6280;
+  --text-muted:  #94A3B8;
+
+  --blue:        #0284C7;
+  --blue-dark:   #0369A1;
+  --blue-light:  #E0F2FE;
+  --blue-mid:    #38BDF8;
+
+  --teal:        #0D9488;
+  --teal-dark:   #0F766E;
+  --teal-light:  #CCFBF1;
+
+  --violet:      #7C3AED;
+  --violet-light:#EDE9FE;
+
+  --emerald:     #059669;
+  --emerald-light:#D1FAE5;
+
+  --amber:       #D97706;
+  --amber-light: #FEF3C7;
+
+  --zalo:        #0068FF;
+
+  --shadow-xs: 0 1px 3px rgba(15,23,42,.06);
+  --shadow-sm: 0 2px 8px rgba(15,23,42,.08), 0 1px 3px rgba(15,23,42,.04);
+  --shadow-md: 0 4px 20px rgba(15,23,42,.1), 0 2px 6px rgba(15,23,42,.04);
+  --shadow-lg: 0 12px 40px rgba(15,23,42,.12), 0 4px 12px rgba(15,23,42,.05);
+  --shadow-blue:  0 8px 24px rgba(2,132,199,.18);
+  --shadow-teal:  0 8px 24px rgba(13,148,136,.15);
+  --shadow-zalo:  0 8px 24px rgba(0,104,255,.25);
+
+  --r:    18px;
+  --r-sm: 12px;
+  --r-xs: 8px;
+
+  --font: 'Be Vietnam Pro', -apple-system, 'Segoe UI', sans-serif;
+}
+
+/* ── Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ── Navigation ── */
+.nav-light {
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 8px rgba(15,23,42,.05);
+}
+
+.nhs-badge {
+  width: 46px; height: 46px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #0284C7, #0D9488);
+  display: flex; align-items: center; justify-content: center;
+  color: white; font-weight: 900; font-size: 12px; letter-spacing: .5px;
+  box-shadow: 0 4px 12px rgba(2,132,199,.3);
+  transition: transform .2s ease, box-shadow .2s ease;
+  flex-shrink: 0;
+}
+.nhs-badge:hover { transform: scale(1.05); box-shadow: 0 6px 18px rgba(2,132,199,.4); }
+
+.nav-link {
+  padding: 8px 14px; border-radius: 9px;
+  font-size: 14px; font-weight: 500;
+  color: var(--text-2); text-decoration: none;
+  transition: all .18s ease;
+}
+.nav-link:hover { color: var(--text); background: var(--bg-alt); }
+.nav-link.active { color: var(--blue-dark); background: var(--blue-light); font-weight: 600; }
+
+/* ── Hero Section ── */
+.hero-section {
+  background: var(--bg-hero);
+  border-bottom: 1px solid var(--border);
+}
+
+/* ── Cards ── */
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow .25s ease, transform .25s ease, border-color .2s ease;
+}
+.card:hover { box-shadow: var(--shadow-md); }
+
+.card-lift:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+
+/* Colored top border on cards */
+.card-blue  { border-top: 3px solid var(--blue); }
+.card-teal  { border-top: 3px solid var(--teal); }
+.card-violet { border-top: 3px solid var(--violet); }
+
+/* ── Medical Case Cards ── */
+.medical-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  display: flex; flex-direction: column;
+  transition: all .25s ease;
+}
+.medical-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--blue-mid); }
+.medical-card.teal:hover { border-color: var(--teal); }
+
+/* ── Feature Nav Cards ── */
+.feature-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 28px 28px 24px;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  box-shadow: var(--shadow-sm);
+  transition: all .25s ease;
+  overflow: hidden;
+}
+.feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.feature-card .fc-bar {
+  position: absolute; top: 0; left: 0; right: 0; height: 4px;
+  border-radius: var(--r) var(--r) 0 0;
+}
+.feature-card .fc-icon {
+  width: 52px; height: 52px; border-radius: 16px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px; margin-bottom: 16px;
+}
+.feature-card .fc-arrow {
+  width: 34px; height: 34px; border-radius: 9px;
+  display: flex; align-items: center; justify-content: center;
+  transition: all .2s ease;
+}
+
+/* ── Buttons ── */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font);
+  font-weight: 700; font-size: 14px;
+  padding: 12px 24px; border-radius: 12px;
+  text-decoration: none; border: none; cursor: pointer;
+  transition: all .22s ease;
+  white-space: nowrap;
+  line-height: 1;
+}
+.btn-primary {
+  background: linear-gradient(135deg, #0284C7, #0369A1);
+  color: white;
+  box-shadow: var(--shadow-blue);
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(2,132,199,.3); }
+
+.btn-zalo {
+  background: linear-gradient(135deg, #0068FF, #0052CC);
+  color: white;
+  box-shadow: var(--shadow-zalo);
+}
+.btn-zalo:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(0,104,255,.4); }
+
+.btn-teal {
+  background: linear-gradient(135deg, #0D9488, #0F766E);
+  color: white;
+  box-shadow: var(--shadow-teal);
+}
+.btn-teal:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(13,148,136,.3); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--blue-dark);
+  border: 2px solid var(--blue);
+}
+.btn-outline:hover { background: var(--blue-light); transform: translateY(-1px); }
+
+.btn-light {
+  background: var(--bg-alt);
+  color: var(--text-2);
+  border: 1px solid var(--border);
+}
+.btn-light:hover { background: var(--border); color: var(--text); transform: translateY(-1px); }
+
+/* ── Tags / Badges ── */
+.tag {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 5px 12px; border-radius: 100px;
+  font-size: 12px; font-weight: 600;
+  border: 1px solid transparent;
+}
+.tag-blue   { background: var(--blue-light);    color: var(--blue-dark); border-color: #BAE6FD; }
+.tag-teal   { background: var(--teal-light);    color: var(--teal-dark); border-color: #99F6E4; }
+.tag-violet { background: var(--violet-light);  color: var(--violet); border-color: #DDD6FE; }
+.tag-emerald{ background: var(--emerald-light); color: var(--emerald); border-color: #A7F3D0; }
+.tag-amber  { background: var(--amber-light);   color: var(--amber); border-color: #FDE68A; }
+.tag-gray   { background: var(--bg-alt);        color: var(--text-2); border-color: var(--border); }
+
+/* ── Section Styles ── */
+.section-bg-white { background: var(--white); }
+.section-bg-alt   { background: var(--bg-alt); }
+.section-bg-blue  { background: linear-gradient(135deg, #F0F9FF, #FAFAFA); }
+
+/* ── Section Label ── */
+.section-eyebrow {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 12px; font-weight: 700; letter-spacing: .09em;
+  text-transform: uppercase; color: var(--blue);
+}
+.section-eyebrow::before {
+  content: '';
+  width: 20px; height: 3px; border-radius: 2px;
+  background: var(--blue); display: inline-block;
+}
+.section-eyebrow.teal   { color: var(--teal); }
+.section-eyebrow.teal::before { background: var(--teal); }
+.section-eyebrow.violet { color: var(--violet); }
+.section-eyebrow.violet::before { background: var(--violet); }
+
+/* ── Stat Number ── */
+.stat-num {
+  font-size: 2.5rem; font-weight: 800;
+  line-height: 1; letter-spacing: -0.04em;
+}
+
+/* ── Before/After Slider ── */
+.ba-container {
+  position: relative; overflow: hidden; user-select: none;
+  border-radius: 14px; background-color: #E2E8F0;
+  aspect-ratio: 4/3;
+}
+.ba-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.ba-after-wrapper {
+  position: absolute; inset: 0; width: 50%; height: 100%;
+  overflow: hidden;
+  border-right: 2px solid #0284C7;
+  box-shadow: 3px 0 16px rgba(2,132,199,.25);
+}
+.ba-after-wrapper .ba-image { width:100%; height:100%; object-fit:cover; }
+.ba-slider-handle {
+  position: absolute; top:50%; left:50%;
+  transform: translate(-50%,-50%);
+  width: 38px; height: 38px;
+  background: white;
+  border-radius: 50%;
+  border: 2px solid #0284C7;
+  box-shadow: 0 2px 12px rgba(2,132,199,.3);
+  display: flex; align-items:center; justify-content:center;
+  cursor: ew-resize; z-index: 10;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.ba-slider-handle:hover {
+  transform: translate(-50%,-50%) scale(1.1);
+  box-shadow: 0 4px 20px rgba(2,132,199,.4);
+}
+.ba-badge {
+  position:absolute; bottom:10px; padding:4px 10px;
+  font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase;
+  border-radius:100px; z-index:5;
+}
+.ba-badge-before { right:10px; background:rgba(255,255,255,.85); color:#475569; border:1px solid #CBD5E1; }
+.ba-badge-after  { left:10px;  background:rgba(2,132,199,.15); color:#0369A1; border:1px solid rgba(2,132,199,.3); backdrop-filter:blur(6px); }
+
+/* ── Sensitive Blur ── */
+.sensitive-blur    { filter:blur(16px); transition:filter .3s ease; }
+.sensitive-unblurred { filter:none; }
+
+/* ── Line Clamp ── */
+.clamp-2 { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+.clamp-3 { display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+
+/* ── Floating Zalo ── */
+.zalo-fab {
+  position: fixed; bottom: 28px; right: 28px; z-index: 9990;
+  display: flex; flex-direction: column; align-items: flex-end; gap: 10px;
+}
+.zalo-fab-btn {
+  display: flex; align-items: center; gap: 10px;
+  background: linear-gradient(135deg, #0068FF, #0052CC);
+  color: white; font-family: var(--font);
+  font-weight: 700; font-size: 14px;
+  padding: 14px 22px 14px 18px; border-radius: 100px;
+  text-decoration: none; cursor: pointer; border: none;
+  box-shadow: 0 8px 28px rgba(0,104,255,.35);
+  transition: all .25s ease;
+  position: relative;
+}
+.zalo-fab-btn:hover { transform: translateY(-3px); box-shadow: 0 12px 36px rgba(0,104,255,.5); }
+.zalo-pulse-ring {
+  position: absolute; inset: -5px; border-radius: 100px;
+  background: #0068FF; opacity: 0;
+  animation: zalo-pulse 2.5s ease-out infinite;
+}
+@keyframes zalo-pulse {
+  0%   { transform:scale(.95); opacity:.4; }
+  70%  { transform:scale(1.22); opacity:0; }
+  100% { transform:scale(1.22); opacity:0; }
+}
+.zalo-qr-popup {
+  width: 230px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 20px; padding: 16px;
+  box-shadow: var(--shadow-lg);
+  opacity: 0; pointer-events: none;
+  transform: translateY(12px) scale(.95);
+  transition: all .28s cubic-bezier(.16,1,.3,1);
+  transform-origin: bottom right;
+}
+.zalo-qr-popup.visible {
+  opacity: 1; pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+/* ── Contact Info Items ── */
+.contact-row {
+  display: flex; align-items: flex-start; gap: 14px;
+  padding: 16px; border-radius: 14px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  transition: border-color .2s;
+}
+.contact-row:hover { border-color: var(--blue-mid); }
+.contact-icon {
+  width: 40px; height: 40px; border-radius: 12px;
+  display: flex; align-items:center; justify-content:center;
+  flex-shrink: 0;
+}
+
+/* ── Footer ── */
+.footer-dark { background: #0F172A; color: #94A3B8; }
+
+/* ── Divider ── */
+.divider { border:none; border-top:1px solid var(--border); }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #CBD5E1; }
+
+/* ── Hero Specialty Pills ── */
+.specialty-pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 16px; border-radius: 100px;
+  font-size: 13px; font-weight: 600;
+  background: white; border: 1.5px solid var(--border);
+  color: var(--text-2);
+  box-shadow: var(--shadow-xs);
+  transition: all .18s ease;
+}
+.specialty-pill:hover { border-color: var(--blue-mid); color: var(--blue-dark); transform: translateY(-1px); }
+
+/* ── Quote block ── */
+.quote-block {
+  border-left: 4px solid var(--teal);
+  padding-left: 16px;
+  color: var(--text-2);
+  font-style: italic;
+}
