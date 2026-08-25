@@ -212,7 +212,7 @@
             <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" d="M15 19l-7-7 7-7"/></svg>
             Bài trước
           </span>
-          <span class="text-xs font-bold text-slate-800 line-clamp-1">${prevArt.title}</span>
+          <span class="text-xs font-bold text-slate-800 leading-snug">${prevArt.title}</span>
         </a>`;
     }
 
@@ -223,17 +223,17 @@
             Bài tiếp theo
             <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" d="M9 5l7 7-7 7"/></svg>
           </span>
-          <span class="text-xs font-bold text-slate-800 line-clamp-1">${nextArt.title}</span>
+          <span class="text-xs font-bold text-slate-800 leading-snug">${nextArt.title}</span>
         </a>`;
     }
 
-    // Wrist Quick Links
+    // Quick Links
     const quickLinksBox = document.getElementById('wrist-quick-links');
     if (quickLinksBox) {
-      quickLinksBox.innerHTML = MEDICAL_ARTICLES.slice(0, 10).map((a, idx) => `
+      quickLinksBox.innerHTML = MEDICAL_ARTICLES.map((a, idx) => `
         <a href="article-detail.html?id=${a.id}" class="p-2 rounded-lg ${a.id === article.id ? 'bg-violet-100 font-bold text-violet-800' : 'text-slate-600 hover:bg-white hover:text-violet-700'} flex items-center gap-2 transition-colors">
           <span class="w-5 h-5 rounded-full ${a.id === article.id ? 'bg-violet-600 text-white' : 'bg-slate-200 text-slate-600'} text-[10px] font-mono flex items-center justify-center shrink-0">${idx+1}</span>
-          <span class="truncate">${a.title}</span>
+          <span class="text-xs">${a.title}</span>
         </a>
       `).join('');
     }
