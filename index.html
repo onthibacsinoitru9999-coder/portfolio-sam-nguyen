@@ -502,7 +502,7 @@
       initBeforeAfterSliders();
     }
     const articles = document.getElementById('featured-articles-container');
-    if (articles) articles.innerHTML = MEDICAL_ARTICLES.slice(0, 6).map(a => createArticleCardHtml(a)).join('');
+    if (articles) articles.innerHTML = MEDICAL_ARTICLES.map(a => createArticleCardHtml(a)).join('');
   });
 </script>
 </body>
