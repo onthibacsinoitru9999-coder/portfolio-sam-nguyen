@@ -65,10 +65,10 @@ function createTraumaCardHtml(c) {
           <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
           ${c.date} · ${c.patientInfo}
         </div>
-        <h3 class="text-base font-bold text-slate-800 mb-2 leading-snug clamp-2">
+        <h3 class="text-base font-bold text-slate-800 mb-2 leading-snug">
           <a href="case-detail.html?id=${c.id}" class="hover:text-sky-700 transition-colors">${c.title}</a>
         </h3>
-        <p class="text-[13px] text-slate-500 clamp-3 mb-4 leading-relaxed flex-1">${c.summary}</p>
+        <p class="text-[13px] text-slate-600 mb-4 leading-relaxed flex-1">${c.summary}</p>
         <div class="flex flex-wrap gap-1.5 mb-4">${tagsHtml}</div>
         <a href="case-detail.html?id=${c.id}"
           class="flex items-center justify-center gap-2 bg-sky-50 hover:bg-sky-100 border border-sky-200 text-sky-700 text-xs font-bold py-2.5 px-4 rounded-xl transition-all">
@@ -123,10 +123,10 @@ function createPlasticCardHtml(c) {
           <span class="tag tag-teal text-[10px]">${c.category}</span>
           <span class="text-[10px] text-slate-400 font-mono">${c.id}</span>
         </div>
-        <h3 class="text-base font-bold text-slate-800 mb-2 leading-snug clamp-2">
+        <h3 class="text-base font-bold text-slate-800 mb-2 leading-snug">
           <a href="case-detail.html?id=${c.id}" class="hover:text-teal-700 transition-colors">${c.title}</a>
         </h3>
-        <p class="text-[13px] text-slate-500 clamp-3 mb-4 leading-relaxed flex-1">${c.summary}</p>
+        <p class="text-[13px] text-slate-600 mb-4 leading-relaxed flex-1">${c.summary}</p>
         <div class="flex flex-wrap gap-1.5 mb-4">${tagsHtml}</div>
         <a href="case-detail.html?id=${c.id}"
           class="flex items-center justify-center gap-2 bg-teal-50 hover:bg-teal-100 border border-teal-200 text-teal-700 text-xs font-bold py-2.5 px-4 rounded-xl transition-all">
@@ -164,10 +164,10 @@ function createArticleCardHtml(a) {
             ${a.readTime}
           </span>
         </div>
-        <h3 class="text-base font-bold text-slate-800 mb-2 leading-snug clamp-2">
+        <h3 class="text-base font-bold text-slate-800 mb-2 leading-snug">
           <a href="article-detail.html?id=${a.id}" class="hover:text-violet-700 transition-colors">${a.title}</a>
         </h3>
-        <p class="text-[13px] text-slate-500 clamp-3 mb-4 leading-relaxed flex-1">${a.summary}</p>
+        <p class="text-[13px] text-slate-600 mb-4 leading-relaxed flex-1">${a.summary}</p>
         <div class="flex flex-wrap gap-1.5 mb-4">${tagsHtml}</div>
         <a href="article-detail.html?id=${a.id}"
           class="flex items-center justify-center gap-2 bg-violet-50 hover:bg-violet-100 border border-violet-200 text-violet-700 text-xs font-bold py-2.5 px-4 rounded-xl transition-all">
