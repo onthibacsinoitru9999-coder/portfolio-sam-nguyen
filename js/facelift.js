@@ -100,8 +100,8 @@ const CLINICAL_CASES = {
     technique: "Deep Plane Facelift toàn phần + Platysmaplasty cơ bám da cổ",
     doctor: "ThS.BS Phẫu thuật Tạo hình Vi phẫu Viện Trung Ương",
     warranty: "Bảo hành cấu trúc 10 năm theo văn bản",
-    beforeSrc: "assets/images/facelift_ba_case1_before.svg",
-    afterSrc: "assets/images/facelift_ba_case1_after.svg",
+    beforeSrc: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1000&q=80",
+    afterSrc: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=1000&q=80",
     description: "Khách hàng 52 tuổi với tình trạng rãnh cười sâu, khóe miệng trễ và nọng cằm mất viền hàm. Bác sĩ bóc tách giải phóng toàn bộ dây chằng giữ mặt (Zygomatic & Masseteric ligaments), nâng đỡ khối cơ mặt theo vector thẳng đứng. Kết quả trẻ lại 12 - 15 tuổi, biểu cảm tự nhiên mềm mại tuyệt đối.",
     rejuvenation: "Trẻ hóa 15 năm",
     scarless: "Đường mổ giấu vi phẫu trong gờ bình tai"
@@ -111,8 +111,8 @@ const CLINICAL_CASES = {
     technique: "Căng da nội soi Mid-Face & Thái dương vi phẫu",
     doctor: "ThS.BS Bệnh viện Tuyến Trung Ương",
     warranty: "Bảo hành cấu trúc 10 năm",
-    beforeSrc: "assets/images/facelift_ba_case2_before.svg",
-    afterSrc: "assets/images/facelift_ba_case2_after.svg",
+    beforeSrc: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1000&q=80",
+    afterSrc: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80",
     description: "Bệnh nhân 39 tuổi xuất hiện dấu hiệu sa trễ má sớm và đuôi mắt mệt mỏi nhưng rất sợ sẹo quanh tai. Thực hiện căng da nội soi vi phẫu Karl Storz HD qua 3 điểm rạch 1cm ẩn sâu trong tóc thái dương. Tuyệt đối KHÔNG có đường rạch trước hay sau tai. Hồi phục đi làm sau 5 ngày.",
     rejuvenation: "Trẻ hóa 8 - 10 năm",
     scarless: "100% không sẹo lộ, giấu trọn trong chân tóc"
