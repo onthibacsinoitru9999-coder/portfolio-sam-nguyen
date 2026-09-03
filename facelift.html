@@ -14,47 +14,28 @@
       theme: {
         extend: {
           colors: {
-            gold: {
-              100: '#FDF4C9',
-              200: '#FBE996',
-              300: '#F5D765',
-              400: '#E6CA65',
-              500: '#D4AF37',
-              600: '#AA771C',
-              700: '#8B6508'
-            },
-            navy: {
-              900: '#070D1B',
-              800: '#0C162C',
-              700: '#111F3C',
-              600: '#1A2E56'
-            }
+            gold: { 100: '#FDF4C9', 200: '#FBE996', 300: '#F5D765', 400: '#E6CA65', 500: '#D4AF37', 600: '#AA771C', 700: '#8B6508' },
+            navy: { 900: '#070D1B', 800: '#0C162C', 700: '#111F3C', 600: '#1A2E56' }
           },
           fontFamily: {
-            serif: ['Playfair Display', 'Cormorant Garamond', 'Georgia', 'serif'],
-            sans: ['Plus Jakarta Sans', '-apple-system', 'BlinkMacSystemFont', 'sans-serif']
+            serif: ['Lora', 'Playfair Display', 'Georgia', 'serif'],
+            sans: ['Be Vietnam Pro', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif']
           }
         }
       }
     }
   </script>
-
   <link rel="stylesheet" href="css/facelift.css">
 </head>
 <body class="facelift-body">
 
-  <!-- ══════════════════════════════════════════════════════════
-       FLOATING VIP ACTION BAR
-  ══════════════════════════════════════════════════════════ -->
+  <!-- ── FLOATING VIP ACTION BAR ── -->
   <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
-    <!-- Hotline Call Button -->
     <a href="tel:0373030031" class="w-14 h-14 rounded-full bg-emerald-600 text-white flex items-center justify-center shadow-lg hover:bg-emerald-500 hover:scale-105 transition-all" title="Gọi Hotline Bác sĩ">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
         <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/>
       </svg>
     </a>
-
-    <!-- Zalo VIP Consultation Button -->
     <a href="https://zalo.me/0373030031" target="_blank" class="w-14 h-14 rounded-full bg-[#0068FF] text-white flex items-center justify-center shadow-lg hover:scale-105 transition-all relative" title="Chat Zalo ThS.BS">
       <div class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-red-500 border-2 border-[#070D1B]"></div>
       <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
@@ -63,9 +44,7 @@
     </a>
   </div>
 
-  <!-- ══════════════════════════════════════════════════════════
-       PRESTIGE TOP BAR
-  ══════════════════════════════════════════════════════════ -->
+  <!-- ── PRESTIGE TOP BAR ── -->
   <div class="bg-[#050A14] border-b border-gold-500/20 text-xs py-2 px-4 text-slate-400">
     <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
       <div class="flex items-center gap-4">
@@ -83,14 +62,11 @@
     </div>
   </div>
 
-  <!-- ══════════════════════════════════════════════════════════
-       STICKY NAVIGATION
-  ══════════════════════════════════════════════════════════ -->
+  <!-- ── STICKY NAVIGATION ── -->
   <header id="faceliftNav" class="facelift-nav sticky top-0 z-40">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20 gap-4">
         
-        <!-- Logo -->
         <a href="facelift.html" class="flex items-center gap-3.5">
           <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-300 via-amber-500 to-amber-700 p-0.5 shadow-md flex items-center justify-center">
             <div class="w-full h-full bg-[#070D1B] rounded-[10px] flex items-center justify-center">
@@ -106,7 +82,6 @@
           </div>
         </a>
 
-        <!-- Desktop Menu -->
         <nav class="hidden xl:flex items-center gap-7 text-sm font-medium">
           <a href="#scarless" class="text-slate-300 hover:text-amber-300 transition-colors">Căng Da Nội Soi Không Sẹo</a>
           <a href="#deepplane" class="text-slate-300 hover:text-amber-300 transition-colors">Deep Plane Facelift</a>
@@ -117,7 +92,6 @@
           <a href="#pricing" class="text-slate-300 hover:text-amber-300 transition-colors">Chi Phí</a>
         </nav>
 
-        <!-- CTA Action -->
         <div class="flex items-center gap-3">
           <a href="#booking" class="btn-gold text-xs sm:text-sm py-2.5 px-5">
             <span>Đặt Lịch Khám 1:1</span>
@@ -130,7 +104,6 @@
 
       </div>
 
-      <!-- Mobile Menu Dropdown -->
       <div id="mobileFaceliftMenu" class="hidden xl:hidden pb-6 pt-2 border-t border-slate-800 flex flex-col gap-3 text-sm">
         <a href="#scarless" class="text-slate-300 hover:text-amber-300 py-1.5">Căng Da Nội Soi Không Sẹo</a>
         <a href="#deepplane" class="text-slate-300 hover:text-amber-300 py-1.5">Deep Plane Facelift Hoa Kỳ</a>
@@ -149,36 +122,27 @@
     </div>
   </header>
 
-  <!-- ══════════════════════════════════════════════════════════
-       HERO SECTION — ULTRA LUXURY EDITORIAL
-  ══════════════════════════════════════════════════════════ -->
+  <!-- ── HERO SECTION ── -->
   <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-32 overflow-hidden">
-    <!-- Ambient Lighting Backdrop -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gradient-to-b from-amber-500/10 via-sky-600/5 to-transparent blur-[140px] pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid lg:grid-cols-12 gap-12 items-center">
         
-        <!-- Left 7 Cols: Headline & Core Values -->
         <div class="lg:col-span-7">
-          
-          <!-- Trust Badge -->
           <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-300 text-xs font-bold uppercase tracking-widest mb-6">
             <span>👑 TIÊU CHUẨN Y KHOA BEVERLY HILLS &amp; NEW YORK</span>
           </div>
 
-          <!-- Main Serif Headline -->
           <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.18] mb-6">
             Nghệ Thuật Căng Da Mặt Tầng Sâu &amp; 
             <span class="text-gold-gradient block mt-1">Nội Soi Không Sẹo</span>
           </h1>
 
-          <!-- Subtitle -->
           <p class="text-slate-300 text-lg sm:text-xl font-normal leading-relaxed mb-8 max-w-2xl">
             Tái sinh <span class="text-amber-300 font-semibold">10 đến 15 năm thanh xuân</span>. Trực tiếp thực hiện bởi <span class="text-white font-semibold">ThS.BS Phẫu Thuật Vi Phẫu Viện Tuyến Trung Ương</span>. Không co kéo biến dạng biểu cảm — Cam kết cấu trúc bảo hành 10 năm bằng văn bản.
           </p>
 
-          <!-- 4 Pillars Checkgrid -->
           <div class="grid sm:grid-cols-2 gap-4 mb-10">
             <div class="flex items-start gap-3 p-3.5 rounded-xl bg-navy-800/80 border border-slate-700/60">
               <div class="w-8 h-8 rounded-lg bg-amber-400/20 text-amber-300 flex items-center justify-center shrink-0 font-bold">✓</div>
@@ -213,7 +177,6 @@
             </div>
           </div>
 
-          <!-- Dual CTA -->
           <div class="flex flex-wrap items-center gap-4">
             <a href="#booking" class="btn-gold text-base py-4 px-8">
               <span>Đăng Ký Tư Vấn Trực Tiếp 1:1</span>
@@ -226,15 +189,11 @@
 
         </div>
 
-        <!-- Right 5 Cols: Luxury 10-Year Seal & Hero Visual -->
         <div class="lg:col-span-5 flex flex-col items-center justify-center">
           <div class="relative w-full max-w-md">
-            <!-- Ambient Glow -->
             <div class="absolute inset-0 bg-gradient-to-tr from-amber-500/20 to-sky-500/20 rounded-3xl blur-2xl"></div>
 
             <div class="relative p-6 sm:p-8 rounded-3xl bg-gradient-to-b from-navy-800/90 to-navy-900/90 border border-gold-500/30 shadow-2xl text-center">
-              
-              <!-- 10-Year Seal Image -->
               <div class="w-48 h-48 sm:w-56 sm:h-56 mx-auto mb-6 warranty-pulse">
                 <img src="assets/images/facelift_warranty_seal.svg" alt="Huy hiệu Bảo hành 10 năm Facelift" class="w-full h-full object-contain">
               </div>
@@ -268,10 +227,7 @@
       </div>
     </div>
   </section>
-
-  <!-- ══════════════════════════════════════════════════════════
-       INTERACTIVE BEFORE & AFTER SLIDER (CLINICAL GALLERY)
-  ══════════════════════════════════════════════════════════ -->
+  <!-- ── INTERACTIVE BEFORE & AFTER SLIDER ── -->
   <section id="cases" class="py-20 bg-navy-800/60 border-y border-slate-800 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -287,7 +243,6 @@
         </p>
       </div>
 
-      <!-- Case Selection Tabs -->
       <div class="flex flex-wrap justify-center gap-3 mb-10">
         <button data-case-tab="case1" class="active px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold border border-amber-400 bg-amber-400/10 text-amber-300 transition-all">
           Ca 01: Deep Plane Facelift &amp; Cổ (Nữ 52t)
@@ -299,21 +254,17 @@
 
       <div class="grid lg:grid-cols-12 gap-10 items-center">
         
-        <!-- Left: Draggable Interactive Comparison Slider -->
         <div class="lg:col-span-7">
           <div id="baContainer" class="ba-container">
             <div class="ba-image-wrapper">
-              <!-- AFTER IMAGE (Underneath) -->
               <img id="baAfterImg" class="ba-after-img" src="assets/images/facelift_ba_case1_after.svg" alt="Sau phẫu thuật Facelift">
               <span class="ba-badge-label ba-badge-after">SAU PHẪU THUẬT</span>
 
-              <!-- BEFORE IMAGE (Clipped on top) -->
               <div id="baBeforeWrapper" class="ba-before-wrapper">
                 <img id="baBeforeImg" src="assets/images/facelift_ba_case1_before.svg" alt="Trước phẫu thuật Facelift">
                 <span class="ba-badge-label ba-badge-before">TRƯỚC PHẪU THUẬT</span>
               </div>
 
-              <!-- Draggable Divider Handle -->
               <div id="baHandle" class="ba-handle">
                 <div class="ba-handle-circle">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -328,7 +279,6 @@
           </p>
         </div>
 
-        <!-- Right: Clinical Case Details -->
         <div class="lg:col-span-5">
           <div class="glass-panel p-6 sm:p-8">
             <div class="flex items-center gap-2 mb-3">
@@ -370,23 +320,18 @@
 
     </div>
   </section>
-
-  <!-- ══════════════════════════════════════════════════════════
-       KỸ THUẬT 1: CĂNG DA NỘI SOI KHÔNG SẸO (SCARLESS FACELIFT)
-  ══════════════════════════════════════════════════════════ -->
+  <!-- ── KỸ THUẬT 1: CĂNG DA NỘI SOI KHÔNG SẸO ── -->
   <section id="scarless" class="py-24 relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="grid lg:grid-cols-12 gap-12 items-center">
         
-        <!-- Left: Technical Diagram -->
         <div class="lg:col-span-6">
           <div class="relative rounded-2xl overflow-hidden border border-cyan-500/30 shadow-2xl">
             <img src="assets/images/facelift_endoscopic_scarless.svg" alt="Sơ đồ kỹ thuật Căng Da Nội Soi Không Sẹo" class="w-full h-auto">
           </div>
         </div>
 
-        <!-- Right: Detailed Presentation -->
         <div class="lg:col-span-6">
           
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/15 border border-cyan-400/30 text-cyan-300 text-xs font-bold uppercase tracking-wider mb-4">
@@ -454,15 +399,12 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════════════════════
-       KỸ THUẬT 2: DEEP PLANE FACELIFT (TIÊU CHUẨN VÀNG HOA KỲ)
-  ══════════════════════════════════════════════════════════ -->
+  <!-- ── KỸ THUẬT 2: DEEP PLANE FACELIFT ── -->
   <section id="deepplane" class="py-24 bg-navy-800/40 border-y border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="grid lg:grid-cols-12 gap-12 items-center">
         
-        <!-- Left: Detailed Explanations & 3 Generations Matrix -->
         <div class="lg:col-span-6 order-2 lg:order-1">
           
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-400/30 text-amber-300 text-xs font-bold uppercase tracking-wider mb-4">
@@ -478,10 +420,8 @@
             Được coi là đỉnh cao phẫu thuật thẩm mỹ trẻ hóa trên toàn thế giới hiện nay. Thay vì chỉ kéo căng da, kỹ thuật thâm nhập vào <strong class="text-amber-300">khoang giải phẫu sâu bên dưới lớp SMAS</strong> để giải phóng các dây chằng giữ mặt bị xơ hóa.
           </p>
 
-          <!-- Comparison Table: 3 Generations -->
           <div class="space-y-3 mb-8">
             
-            <!-- Generation 1 -->
             <div class="p-4 rounded-xl bg-navy-900/90 border border-red-500/30">
               <div class="flex justify-between items-center mb-1.5">
                 <span class="text-xs font-extrabold text-red-400 uppercase tracking-wider">Căng da truyền thống (Skin-Only)</span>
@@ -490,7 +430,6 @@
               <p class="text-xs text-slate-300">Chỉ kéo căng da ngoài, lực căng lớn làm da mỏng teo, miệng bị méo "gió thổi", vết sẹo trước tai bị giãn to, nhanh chùng lại sau thời gian ngắn.</p>
             </div>
 
-            <!-- Generation 2 -->
             <div class="p-4 rounded-xl bg-navy-900/90 border border-slate-700">
               <div class="flex justify-between items-center mb-1.5">
                 <span class="text-xs font-extrabold text-slate-300 uppercase tracking-wider">Căng da SMAS gấp nếp (SMAS Plication)</span>
@@ -499,7 +438,6 @@
               <p class="text-xs text-slate-300">Chỉ khâu gập lớp cân cơ nhưng KHÔNG giải phóng dây chằng gò má, khiến khuôn mặt vẫn còn căng cứng cục bộ, chưa đạt độ mềm mại tự nhiên tối đa.</p>
             </div>
 
-            <!-- Generation 3: Deep Plane -->
             <div class="p-4 rounded-xl bg-gradient-to-r from-amber-500/15 to-navy-900 border-2 border-amber-400/80 shadow-lg">
               <div class="flex justify-between items-center mb-1.5">
                 <span class="text-xs font-black text-amber-300 uppercase tracking-wider flex items-center gap-1.5">
@@ -520,7 +458,6 @@
 
         </div>
 
-        <!-- Right: Medical Diagram -->
         <div class="lg:col-span-6 order-1 lg:order-2">
           <div class="relative rounded-2xl overflow-hidden border border-amber-400/30 shadow-2xl">
             <img src="assets/images/facelift_deep_plane_anatomy.svg" alt="Sơ đồ giải phẫu Deep Plane Facelift" class="w-full h-auto">
@@ -531,10 +468,7 @@
 
     </div>
   </section>
-
-  <!-- ══════════════════════════════════════════════════════════
-       CAM KẾT BẢO HÀNH CẤU TRÚC 10 NĂM (WARRANTY POLICY)
-  ══════════════════════════════════════════════════════════ -->
+  <!-- ── CAM KẾT BẢO HÀNH CẤU TRÚC 10 NĂM ── -->
   <section id="warranty" class="py-24 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -552,7 +486,6 @@
 
       <div class="grid md:grid-cols-3 gap-8 mb-14">
         
-        <!-- Card 1 -->
         <div class="glass-panel p-8">
           <div class="w-14 h-14 rounded-2xl bg-amber-400/20 text-amber-300 flex items-center justify-center text-2xl mb-6">
             📜
@@ -563,7 +496,6 @@
           </p>
         </div>
 
-        <!-- Card 2 -->
         <div class="glass-panel p-8">
           <div class="w-14 h-14 rounded-2xl bg-sky-400/20 text-sky-300 flex items-center justify-center text-2xl mb-6">
             🩺
@@ -574,7 +506,6 @@
           </p>
         </div>
 
-        <!-- Card 3 -->
         <div class="glass-panel p-8">
           <div class="w-14 h-14 rounded-2xl bg-emerald-400/20 text-emerald-300 flex items-center justify-center text-2xl mb-6">
             💳
@@ -587,7 +518,6 @@
 
       </div>
 
-      <!-- Guarantee Banner Box -->
       <div class="rounded-2xl p-8 bg-gradient-to-r from-amber-500/15 via-navy-800 to-amber-500/10 border border-amber-400/40 flex flex-col md:flex-row items-center justify-between gap-6">
         <div class="flex items-center gap-5">
           <div class="w-16 h-16 rounded-full bg-amber-400 text-navy-900 flex items-center justify-center text-3xl shrink-0 font-serif font-black">
@@ -606,9 +536,7 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════════════════════
-       KHÁM PHÁ GIẢI PHẪU 4 TẦNG (ANATOMY EXPLORER)
-  ══════════════════════════════════════════════════════════ -->
+  <!-- ── KHÁM PHÁ GIẢI PHẪU 4 TẦNG ── -->
   <section id="anatomy" class="py-24 bg-navy-800/50 border-y border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -624,12 +552,10 @@
         </p>
       </div>
 
-      <!-- Diagram Image -->
       <div class="mb-10 rounded-2xl overflow-hidden border border-slate-700 shadow-xl max-w-4xl mx-auto">
         <img src="assets/images/facelift_layers_diagram.svg" alt="Sơ đồ 4 tầng giải phẫu lão hóa" class="w-full h-auto">
       </div>
 
-      <!-- Layer Selection Buttons -->
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 max-w-4xl mx-auto mb-8">
         <button data-anatomy-layer="layer1" class="px-4 py-3 rounded-xl border border-slate-700 bg-slate-800/60 text-slate-300 text-xs sm:text-sm font-bold text-left hover:border-amber-400 transition-all">
           1. Tầng Da (Biểu Bì)
@@ -645,7 +571,6 @@
         </button>
       </div>
 
-      <!-- Dynamic Layer Detail Display Card -->
       <div class="max-w-4xl mx-auto glass-panel p-8 border-amber-400/40">
         <div class="flex items-center justify-between gap-4 mb-4">
           <h3 id="anatomyTitle" class="font-serif text-2xl font-bold text-amber-300">
@@ -673,10 +598,7 @@
 
     </div>
   </section>
-
-  <!-- ══════════════════════════════════════════════════════════
-       CÔNG CỤ TỰ ĐÁNH GIÁ ĐỘ LÃO HÓA (2-MINUTE QUIZ)
-  ══════════════════════════════════════════════════════════ -->
+  <!-- ── CÔNG CỤ TỰ ĐÁNH GIÁ ĐỘ LÃO HÓA ── -->
   <section id="quiz" class="py-24 relative">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -695,7 +617,6 @@
       <div class="glass-panel p-6 sm:p-10 border-slate-700">
         <form id="agingQuizForm" class="space-y-6">
           
-          <!-- Age Group -->
           <div>
             <label class="block text-sm font-bold text-white mb-2">1. Độ tuổi của bạn:</label>
             <select id="quizAgeSelect" class="w-full bg-navy-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:border-amber-400 focus:outline-none">
@@ -705,7 +626,6 @@
             </select>
           </div>
 
-          <!-- Checklist -->
           <div>
             <label class="block text-sm font-bold text-white mb-3">2. Các dấu hiệu bạn đang gặp phải (chọn tất cả dấu hiệu):</label>
             <div class="grid sm:grid-cols-2 gap-3 text-sm">
@@ -747,7 +667,6 @@
 
         </form>
 
-        <!-- Dynamic Results Box -->
         <div id="quizResultBox" class="hidden mt-8 pt-8 border-t border-slate-700/80">
           <div class="p-6 rounded-2xl bg-gradient-to-r from-amber-500/15 via-navy-900 to-sky-500/15 border-2 border-amber-400/60">
             <div class="flex items-center gap-2 mb-2">
@@ -777,15 +696,12 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════════════════════
-       ĐỘI NGŨ THS.BS VIỆN TUYẾN TRUNG ƯƠNG
-  ══════════════════════════════════════════════════════════ -->
+  <!-- ── ĐỘI NGŨ THS.BS VIỆN TUYẾN TRUNG ƯƠNG ── -->
   <section id="doctor" class="py-24 bg-navy-800/40 border-y border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="grid lg:grid-cols-12 gap-12 items-center">
         
-        <!-- Left: Doctor Credential Badges & Visual -->
         <div class="lg:col-span-5 text-center lg:text-left">
           <div class="relative inline-block">
             <div class="w-64 h-64 sm:w-80 sm:h-80 rounded-3xl bg-gradient-to-br from-amber-400 via-sky-600 to-navy-900 p-1 shadow-2xl mx-auto">
@@ -799,7 +715,6 @@
               </div>
             </div>
 
-            <!-- Floater Badge -->
             <div class="absolute -bottom-4 -right-4 bg-navy-900 border border-amber-400 px-4 py-2.5 rounded-xl shadow-xl text-left">
               <p class="text-xs text-slate-400 font-medium">Bệnh viện thực hiện</p>
               <p class="text-sm font-bold text-amber-300">BV Tuyến Trung Ương</p>
@@ -807,7 +722,6 @@
           </div>
         </div>
 
-        <!-- Right: Doctor Story & Why Central Hospital Matters -->
         <div class="lg:col-span-7">
           
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-400/30 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-4">
@@ -827,7 +741,6 @@
             </p>
           </div>
 
-          <!-- Hospital Standards Checklist -->
           <div class="grid sm:grid-cols-2 gap-4 mb-8 text-sm">
             <div class="flex items-center gap-3 p-3 rounded-xl bg-navy-900/80 border border-slate-700">
               <span class="text-emerald-400 font-bold text-lg">✓</span>
@@ -857,10 +770,7 @@
 
     </div>
   </section>
-
-  <!-- ══════════════════════════════════════════════════════════
-       QUY TRÌNH 6 BƯỚC KHÉP KÍN CHUẨN HOA KỲ
-  ══════════════════════════════════════════════════════════ -->
+  <!-- ── QUY TRÌNH 6 BƯỚC KHÉP KÍN ── -->
   <section class="py-24 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -878,7 +788,6 @@
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         
-        <!-- Step 1 -->
         <div class="glass-panel p-6">
           <div class="step-number mb-4">01</div>
           <h3 class="text-lg font-bold text-white mb-2">Thăm Khám &amp; Đo Đạc Vector 3D</h3>
@@ -887,7 +796,6 @@
           </p>
         </div>
 
-        <!-- Step 2 -->
         <div class="glass-panel p-6">
           <div class="step-number mb-4">02</div>
           <h3 class="text-lg font-bold text-white mb-2">Tầm Soát Sức Khỏe Toàn Diện</h3>
@@ -896,7 +804,6 @@
           </p>
         </div>
 
-        <!-- Step 3 -->
         <div class="glass-panel p-6">
           <div class="step-number mb-4">03</div>
           <h3 class="text-lg font-bold text-white mb-2">Hội Chẩn Cùng Kíp Gây Mê Hồi Sức</h3>
@@ -905,7 +812,6 @@
           </p>
         </div>
 
-        <!-- Step 4 -->
         <div class="glass-panel p-6">
           <div class="step-number mb-4">04</div>
           <h3 class="text-lg font-bold text-white mb-2">Tiến Hành Phẫu Thuật Vi Phẫu</h3>
@@ -914,7 +820,6 @@
           </p>
         </div>
 
-        <!-- Step 5 -->
         <div class="glass-panel p-6">
           <div class="step-number mb-4">05</div>
           <h3 class="text-lg font-bold text-white mb-2">Chăm Sóc VIP &amp; Chiếu Plasma Lạnh</h3>
@@ -923,7 +828,6 @@
           </p>
         </div>
 
-        <!-- Step 6 -->
         <div class="glass-panel p-6 border-amber-400/40">
           <div class="step-number mb-4 text-amber-300 border-amber-400">06</div>
           <h3 class="text-lg font-bold text-amber-300 mb-2">Cấp Sổ Bảo Hành 10 Năm</h3>
@@ -937,9 +841,7 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════════════════════
-       BẢNG GIÁ MINH BẠCH & QUYỀN LỢI ĐI KÈM
-  ══════════════════════════════════════════════════════════ -->
+  <!-- ── BẢNG GIÁ MINH BẠCH ── -->
   <section id="pricing" class="py-24 bg-navy-800/50 border-y border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -957,7 +859,6 @@
 
       <div class="grid lg:grid-cols-3 gap-8 items-stretch">
         
-        <!-- Package 1: Endoscopic Scarless -->
         <div class="glass-panel p-8 flex flex-col justify-between border-cyan-500/30">
           <div>
             <span class="px-3 py-1 rounded bg-cyan-500/20 text-cyan-300 text-xs font-bold uppercase tracking-wider">
@@ -986,7 +887,6 @@
           </a>
         </div>
 
-        <!-- Package 2: Deep Plane Full Face (POPULAR) -->
         <div class="glass-panel p-8 flex flex-col justify-between border-2 border-amber-400 bg-navy-800/90 shadow-2xl relative">
           <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-400 text-navy-900 text-xs font-black px-4 py-1 rounded-full uppercase tracking-wider">
             ★ LỰA CHỌN PHỔ BIẾN NHẤT
@@ -1019,7 +919,6 @@
           </a>
         </div>
 
-        <!-- Package 3: Master Rejuvenation Full Face & Neck -->
         <div class="glass-panel p-8 flex flex-col justify-between border-purple-500/30">
           <div>
             <span class="px-3 py-1 rounded bg-purple-500/20 text-purple-300 text-xs font-bold uppercase tracking-wider">
@@ -1053,9 +952,7 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════════════════════
-       CÂU HỎI THƯỜNG GẶP (MEDICAL FAQ)
-  ══════════════════════════════════════════════════════════ -->
+  <!-- ── CÂU HỎI THƯỜNG GẶP ── -->
   <section class="py-24 relative">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -1073,7 +970,6 @@
 
       <div class="space-y-4">
         
-        <!-- FAQ 1 -->
         <div class="facelift-faq-item glass-panel overflow-hidden border-slate-700">
           <div class="faq-header p-5 flex items-center justify-between cursor-pointer">
             <h3 class="text-base font-bold text-white">1. Căng da nội soi không sẹo có thật sự không để lại sẹo ở tai không?</h3>
@@ -1084,7 +980,6 @@
           </div>
         </div>
 
-        <!-- FAQ 2 -->
         <div class="facelift-faq-item glass-panel overflow-hidden border-slate-700">
           <div class="faq-header p-5 flex items-center justify-between cursor-pointer">
             <h3 class="text-base font-bold text-white">2. Tại sao phương pháp này cam kết bảo hành được tới 10 năm?</h3>
@@ -1095,7 +990,6 @@
           </div>
         </div>
 
-        <!-- FAQ 3 -->
         <div class="facelift-faq-item glass-panel overflow-hidden border-slate-700">
           <div class="faq-header p-5 flex items-center justify-between cursor-pointer">
             <h3 class="text-base font-bold text-white">3. Mổ căng da mặt có bị đơ cứng hay mất biểu cảm nụ cười không?</h3>
@@ -1106,7 +1000,6 @@
           </div>
         </div>
 
-        <!-- FAQ 4 -->
         <div class="facelift-faq-item glass-panel overflow-hidden border-slate-700">
           <div class="faq-header p-5 flex items-center justify-between cursor-pointer">
             <h3 class="text-base font-bold text-white">4. Thời gian phẫu thuật và thời gian hồi phục mất bao lâu?</h3>
@@ -1117,7 +1010,6 @@
           </div>
         </div>
 
-        <!-- FAQ 5 -->
         <div class="facelift-faq-item glass-panel overflow-hidden border-slate-700">
           <div class="faq-header p-5 flex items-center justify-between cursor-pointer">
             <h3 class="text-base font-bold text-white">5. Chi phí phẫu thuật đã bao gồm những gì, có phát sinh không?</h3>
@@ -1133,9 +1025,7 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════════════════════
-       VIP CONSULTATION BOOKING FORM
-  ══════════════════════════════════════════════════════════ -->
+  <!-- ── VIP CONSULTATION BOOKING FORM ── -->
   <section id="booking" class="py-24 bg-navy-800/60 border-t border-slate-800 relative">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -1176,7 +1066,6 @@
             </select>
           </div>
 
-          <!-- Photo Upload Simulation -->
           <div>
             <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
               Tải ảnh khuôn mặt hiện tại để Bác sĩ phân tích trước (Tùy chọn)
@@ -1213,7 +1102,6 @@
 
         </form>
 
-        <!-- Alert Success -->
         <div id="bookingSuccessAlert" class="hidden mt-6 p-4 rounded-xl bg-emerald-500/20 border border-emerald-500 text-center">
           <p class="text-sm font-bold text-emerald-300">✓ Đã chuyển thông tin tới Zalo ThS.BS Viện Trung Ương! Bác sĩ sẽ phản hồi trong 15 phút.</p>
         </div>
@@ -1223,9 +1111,7 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════════════════════
-       FOOTER
-  ══════════════════════════════════════════════════════════ -->
+  <!-- ── FOOTER ── -->
   <footer class="bg-[#040812] border-t border-slate-800 text-slate-400 text-xs py-14">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-4 gap-8 mb-12">
@@ -1283,7 +1169,6 @@
     </div>
   </footer>
 
-  <!-- Facelift Interactive Engine -->
   <script src="js/facelift.js"></script>
 
 </body>
