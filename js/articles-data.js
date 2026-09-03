@@ -7,6 +7,47 @@
 
 const MEDICAL_ARTICLES = [
   {
+    "id": "FACELIFT-001",
+    "category": "Phẫu Thuật Trẻ Hóa Mặt",
+    "title": "Deep Plane Facelift Chuẩn Hoa Kỳ: Phân Tích Giải Phẫu Tầng Sâu & Cơ Sở Khoa Học Của Bảo Hành 10 Năm",
+    "author": "ThS.BS. Nguyễn Hữu Sâm (Chuyên khoa Phẫu thuật Tạo hình Vi phẫu - BV Bạch Mai)",
+    "date": "03/09/2026",
+    "readTime": "15 phút đọc",
+    "tags": [
+      "Facelift",
+      "Deep Plane",
+      "Căng da mặt tầng sâu",
+      "Bảo hành 10 năm",
+      "Dây chằng giữ mặt",
+      "SMAS",
+      "Thần kinh mặt VII",
+      "ThS.BS Viện Trung Ương"
+    ],
+    "summary": "Tổng quan giải phẫu học tầng sâu vùng mặt: So sánh đối đầu giữa căng da truyền thống (Skin-only) và Deep Plane Facelift chuẩn Hoa Kỳ. Chi tiết cơ chế giải phóng 4 hệ thống dây chằng (Zygomatic, Masseteric, Mandibular, Parotid), vector treo cơ thẳng đứng, bảo tồn tuyệt đối dây thần kinh mặt VII và cơ sở y khoa cho cam kết duy trì kết quả trên 10 năm.",
+    "coverImage": "assets/images/facelift_deep_plane_anatomy.svg",
+    "content": "\n<div class=\"bg-slate-900 text-white p-6 sm:p-8 rounded-2xl my-6 shadow-xl border border-slate-800\">\n  <div class=\"flex items-center justify-between gap-4 mb-3 border-b border-slate-800 pb-3\">\n    <span class=\"inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30\">\n      ★ Tiêu Chuẩn Phẫu Thuật Hoa Kỳ\n    </span>\n    <span class=\"text-xs text-slate-400 font-mono\">AFI Rejuvenation Monograph 2026</span>\n  </div>\n  <h4 class=\"text-amber-300 font-bold text-base uppercase tracking-wider mb-2\">Tóm Tắt Chuyên Môn Cốt Lõi</h4>\n  <p class=\"text-xs sm:text-sm text-slate-300 leading-relaxed\">\n    Lão hóa khuôn mặt không đơn thuần là tình trạng \"thừa da\" mà là sự lỏng lẻo của hệ thống dây chằng giữ mặt (Retaining ligaments) và sự sa trễ của khối mỡ má nông (Malar fat pad). Căng da mặt kéo da đơn thuần chỉ tồn tại 1-2 năm và gây biến dạng biểu cảm \"gió thổi\". Deep Plane Facelift là kỹ thuật thâm nhập vào khoang giải phẫu tự nhiên vô mạch dưới SMAS, giải phóng hoàn toàn các mỏ neo dây chằng và tái định vị khối cơ mặt theo vector thẳng đứng, giúp khuôn mặt trẻ lại 10-15 tuổi tự nhiên 100% và bền vững trên 10 năm.\n  </p>\n</div>\n\n<h3 class=\"text-xl font-black text-slate-900 mt-8 mb-4 flex items-center gap-2\">\n  <span class=\"w-2.5 h-2.5 rounded-full bg-amber-600\"></span>\n  1. Cơ Sinh Học Lão Hóa: Tại Sao Căng Da Kéo Nông Thất Bại?\n</h3>\n<p class=\"text-slate-700 text-sm sm:text-base leading-relaxed my-3\">\n  Da người có đặc tính đàn hồi co giãn (Viscoelasticity). Khi đặt lực căng lớn lên da, các sợi collagen và elastin sẽ giãn dần theo thời gian (Hiện tượng Stress Relaxation). Kết quả là chỉ sau 6 đến 18 tháng, da mặt lại chùng trở lại, trong khi vết sẹo trước tai bị lực kéo làm giãn to, tạo nên vết sẹo xấu và làm dái tai bị kéo dài dị dạng dạng \"Pixie Ear\".\n</p>\n\n<h3 class=\"text-xl font-black text-slate-900 mt-8 mb-4 flex items-center gap-2\">\n  <span class=\"w-2.5 h-2.5 rounded-full bg-amber-600\"></span>\n  2. Bóc Tách Khoang Deep Plane &amp; Giải Phóng 4 Hệ Thống Dây Chằng\n</h3>\n<p class=\"text-slate-700 text-sm sm:text-base leading-relaxed my-3\">\n  Trong kỹ thuật Deep Plane Facelift, phẫu tích viên đi vào bên dưới lớp SMAS tại vùng chuyển tiếp giữa phần cố định và phần di động của cơ mặt:\n</p>\n<ul class=\"list-disc pl-6 space-y-2 text-sm sm:text-base text-slate-700 my-4\">\n  <li><strong>Dây chằng Gò Má (Zygomatic Ligaments - McGregor's Patch):</strong> Neo giữ khối mỡ má vào xương gò má. Khi được cắt giải phóng, khối mỡ má (Malar Fat Pad) được tự do dời lên cao 1.5 - 2.5 cm theo hướng thẳng đứng, xóa hoàn toàn rãnh mũi má (Nasolabial fold).</li>\n  <li><strong>Dây chằng Cơ Cắn (Upper &amp; Lower Masseteric Ligaments):</strong> Neo giữ SMAS vào bờ trước cơ cắn. Giải phóng dây chằng này là chìa khóa duy nhất để kéo phẳng rãnh khóe miệng marionette và tái lập đường viền xương hàm dưới (Jawline definition) sắc nét.</li>\n  <li><strong>Dây chằng Xương Hàm Dưới (Mandibular Ligaments):</strong> Giải phóng phần nọng mỡ sa trễ jowls ở góc cằm.</li>\n  <li><strong>Bảo vệ Thần Kinh Mặt VII:</strong> Các nhánh thần kinh vận động chạy sâu bên dưới lớp mạc sâu (Deep Cervical Fascia). Việc đi chính xác trong mặt phẳng vô mạch Deep Plane đảm bảo 100% không tổn thương thần kinh.</li>\n</ul>\n\n<h3 class=\"text-xl font-black text-slate-900 mt-8 mb-4 flex items-center gap-2\">\n  <span class=\"w-2.5 h-2.5 rounded-full bg-amber-600\"></span>\n  3. Cơ Sở Y Khoa Của Cam Kết Bảo Hành Cấu Trúc 10 Năm\n</h3>\n<p class=\"text-slate-700 text-sm sm:text-base leading-relaxed my-3\">\n  Sau khi được dời lên vị trí nguyên bản thời thanh xuân, hệ thống SMAS và màng xương sẽ tạo nên quá trình liền thương xơ dính tự nhiên (Fibrous healing). Sự liên kết mô này có độ bền vĩnh viễn, giống như cấu trúc giải phẫu ban đầu. Nhờ đó, tốc độ lão hóa sau phẫu thuật quay trở về mức bình thường từ mốc trẻ lại 15 tuổi, cho phép chúng tôi tự tin cam kết bảo hành cấu trúc 10 năm bằng hợp đồng y khoa.\n</p>\n"
+  },
+  {
+    "id": "FACELIFT-002",
+    "category": "Phẫu Thuật Trẻ Hóa Mặt",
+    "title": "Căng Da Nội Soi Không Sẹo (Endoscopic Scarless Facelift): Kỹ Thuật Giấu Đường Mổ Hoàn Toàn Trong Chân Tóc",
+    "author": "ThS.BS. Nguyễn Hữu Sâm (Chuyên khoa Phẫu thuật Tạo hình Vi phẫu - BV Bạch Mai)",
+    "date": "03/09/2026",
+    "readTime": "12 phút đọc",
+    "tags": [
+      "Căng da nội soi",
+      "Scarless Facelift",
+      "Ponytail Lift",
+      "Nội soi 4K Karl Storz",
+      "Không sẹo tai",
+      "Vi phẫu",
+      "ThS.BS Viện Trung Ương"
+    ],
+    "summary": "Phân tích kỹ thuật phẫu thuật nội soi căng da mặt không để lại sẹo lộ: Chỉ định tối ưu cho độ tuổi 30-48, đường vào vi mô 1cm trong tóc thái dương, ứng dụng camera Karl Storz 4K HD phóng đại 20 lần, bóc tách dưới màng xương và treo cố định lên cân thái dương sâu.",
+    "coverImage": "assets/images/facelift_endoscopic_scarless.svg",
+    "content": "\n<div class=\"bg-slate-900 text-white p-6 sm:p-8 rounded-2xl my-6 shadow-xl border border-slate-800\">\n  <div class=\"flex items-center justify-between gap-4 mb-3 border-b border-slate-800 pb-3\">\n    <span class=\"inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-cyan-500/20 text-cyan-400 border border-cyan-500/30\">\n      ★ Đột Phá Nội Soi Không Sẹo\n    </span>\n    <span class=\"text-xs text-slate-400 font-mono\">AFI Surgical Technique 2026</span>\n  </div>\n  <h4 class=\"text-cyan-300 font-bold text-base uppercase tracking-wider mb-2\">Ưu Điểm Vượt Trội Về Thẩm Mỹ</h4>\n  <p class=\"text-xs sm:text-sm text-slate-300 leading-relaxed\">\n    Nỗi sợ lớn nhất của khách hàng khi nghĩ đến căng da mặt là đường sẹo dài chạy quanh viền tai. Căng da nội soi vi phẫu (Endoscopic Scarless Facelift) giải quyết triệt để nỗi sợ này bằng cách đưa toàn bộ 3 điểm rạch siêu nhỏ (1cm) ẩn sâu trong chân tóc thái dương, 100% không cắt da quanh tai, đem lại kết quả trẻ trung tự nhiên và hồi phục chỉ sau 5-7 ngày.\n  </p>\n</div>\n\n<h3 class=\"text-xl font-black text-slate-900 mt-8 mb-4 flex items-center gap-2\">\n  <span class=\"w-2.5 h-2.5 rounded-full bg-cyan-600\"></span>\n  1. Nguyên Lý Kỹ Thuật Căng Da Nội Soi Vi Phẫu\n</h3>\n<p class=\"text-slate-700 text-sm sm:text-base leading-relaxed my-3\">\n  Dưới sự hỗ trợ của hệ thống camera nội soi Karl Storz độ phân giải 4K, bác sĩ vi phẫu bóc tách chính xác trong khoang vô mạch bên dưới màng xương gò má và bên dưới cân thái dương sâu (Deep Temporal Fascia). Dây chằng giữ gò má được giải phóng tinh vi, sau đó toàn bộ khối cơ mặt được nâng lên và khâu neo giữ vững chắc vào cân thái dương sâu bằng chỉ sinh học không tiêu hoặc Endotine sinh học.\n</p>\n\n<h3 class=\"text-xl font-black text-slate-900 mt-8 mb-4 flex items-center gap-2\">\n  <span class=\"w-2.5 h-2.5 rounded-full bg-cyan-600\"></span>\n  2. Đối Tượng Khách Hàng Lý Tưởng\n</h3>\n<ul class=\"list-disc pl-6 space-y-2 text-sm sm:text-base text-slate-700 my-4\">\n  <li>Khách hàng độ tuổi 30 - 48 bắt đầu có dấu hiệu chùng nhẹ tầng giữa mặt, đuôi mắt cụp mệt mỏi, rãnh cười bắt đầu xuất hiện.</li>\n  <li>Khách hàng có cơ địa sẹo lồi hoặc sợ sẹo lộ quanh tai tuyệt đối.</li>\n  <li>Doanh nhân, người nổi tiếng cần hồi phục nhanh chóng, đi làm lại sau 5 ngày mà không để lộ dấu vết thẩm mỹ.</li>\n</ul>\n"
+  },
+  {
     "id": "CAMPBELL-001",
     "category": "Dịch sách Campbell 13th Ed",
     "title": "Bản dịch Toàn văn: Gãy Xương Thuyền & Khớp Giả Xương Thuyền (Campbell's Operative Orthopaedics 13th Ed - Chapter 69)",

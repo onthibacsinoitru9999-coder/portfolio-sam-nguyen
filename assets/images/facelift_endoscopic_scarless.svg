@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09182A"/>
+      <stop offset="100%" stop-color="#142C44"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#67E8F9"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" rx="16" fill="url(#bgGrad2)" stroke="#1E3A5F" stroke-width="1.5"/>
+
+  <!-- Title Badge -->
+  <g transform="translate(30, 30)">
+    <rect width="380" height="32" rx="6" fill="#0F2438" stroke="#06B6D4" stroke-width="1"/>
+    <text x="190" y="21" text-anchor="middle" fill="#67E8F9" font-family="'Segoe UI', sans-serif" font-size="12.5" font-weight="700" letter-spacing="1.5">KỸ THUẬT CĂNG DA NỘI SOI KHÔNG SẸO (SCARLESS)</text>
+  </g>
+
+  <!-- Visual: Head & Hairline Illustration -->
+  <g transform="translate(50, 90)">
+    <!-- Scalp & Hairline Area (Dark slate) -->
+    <path d="M 80 180 Q 90 80 160 50 Q 220 30 270 70 Q 290 90 295 130 Q 260 140 235 150 Q 200 170 180 200 Q 150 210 130 250 Q 110 320 120 370 Q 100 375 80 340 Z" 
+          fill="#1E293B" opacity="0.7"/>
+
+    <!-- Hairline Contour (Gold Dash) -->
+    <path d="M 270 70 Q 290 90 295 130 Q 260 140 235 150 Q 200 170 180 200 Q 150 210 130 250" 
+          fill="none" stroke="#D97706" stroke-width="2" stroke-dasharray="4,3"/>
+    <text x="240" y="115" fill="#FDE68A" font-family="sans-serif" font-size="11" font-weight="bold">Đường Chân Tóc</text>
+
+    <!-- Face Silhouette -->
+    <path d="M 270 70 Q 300 80 315 110 Q 330 140 335 170 Q 350 190 350 205 Q 335 215 320 220 Q 335 250 330 270 Q 315 290 290 310 Q 260 330 220 345 Q 190 355 170 380" 
+          fill="none" stroke="#475569" stroke-width="2"/>
+
+    <!-- Ear Region (Highlighted with ZERO SCAR symbol) -->
+    <g transform="translate(160, 240)">
+      <path d="M 0 0 Q 20 -10 25 15 Q 30 40 15 65 Q 3 80 0 70 Z" fill="#0F172A" stroke="#64748B" stroke-width="1.5"/>
+      <!-- NO CUTS icon around ear -->
+      <circle cx="12" cy="35" r="18" fill="none" stroke="#10B981" stroke-width="2" stroke-dasharray="2,2"/>
+      <text x="12" y="39" text-anchor="middle" fill="#10B981" font-family="sans-serif" font-size="10" font-weight="900">0 SẸO</text>
+    </g>
+
+    <!-- 3 Endoscopic Portals INSIDE Hairline (1cm incisions) -->
+    <!-- Portal 1: Temporal -->
+    <g transform="translate(200, 100)">
+      <circle r="8" fill="#06B6D4" filter="url(#glowCyan)"/>
+      <circle r="4" fill="#FFFFFF"/>
+      <line x1="0" y1="-12" x2="0" y2="12" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="-15" y="-12" fill="#67E8F9" font-family="sans-serif" font-size="10" font-weight="bold">Vết rạch 1cm (Trong tóc)</text>
+    </g>
+    <!-- Portal 2: Mid-Temporal -->
+    <g transform="translate(160, 140)">
+      <circle r="8" fill="#06B6D4" filter="url(#glowCyan)"/>
+      <circle r="4" fill="#FFFFFF"/>
+      <line x1="0" y1="-12" x2="0" y2="12" stroke="#FFFFFF" stroke-width="1.5"/>
+    </g>
+    <!-- Portal 3: Parietal -->
+    <g transform="translate(130, 190)">
+      <circle r="8" fill="#06B6D4" filter="url(#glowCyan)"/>
+      <circle r="4" fill="#FFFFFF"/>
+      <line x1="0" y1="-12" x2="0" y2="12" stroke="#FFFFFF" stroke-width="1.5"/>
+    </g>
+
+    <!-- Endoscope Camera Beam (Cyan Cone) -->
+    <path d="M 160 140 L 260 210 L 290 240 L 210 230 Z" fill="url(#cyanGrad)" opacity="0.2"/>
+    <path d="M 160 140 L 275 225" stroke="#06B6D4" stroke-width="2" stroke-dasharray="3,3"/>
+
+    <!-- Camera Icon at Portal -->
+    <g transform="translate(140, 120)">
+      <rect width="18" height="12" rx="2" fill="#0891B2"/>
+      <circle cx="9" cy="6" r="3" fill="#FFFFFF"/>
+    </g>
+    <text x="70" y="115" fill="#67E8F9" font-family="sans-serif" font-size="9" font-weight="bold">Camera 4K HD</text>
+
+    <!-- Suspension Vectors to Deep Temporal Fascia -->
+    <g stroke="url(#goldGrad2)" stroke-width="2.5" fill="none">
+      <path d="M 280 240 Q 230 200 170 145"/>
+      <polygon points="170,140 175,152 182,146" fill="#FDE68A"/>
+
+      <path d="M 240 280 Q 200 240 140 195"/>
+      <polygon points="140,190 145,202 152,196" fill="#FDE68A"/>
+    </g>
+    <text x="250" y="270" fill="#FDE68A" font-family="sans-serif" font-size="10.5" font-weight="bold">Treo cơ lên cân thái dương sâu</text>
+  </g>
+
+  <!-- Right Side Explanations -->
+  <g transform="translate(430, 80)">
+    <!-- Point 1 -->
+    <rect width="340" height="95" rx="10" fill="#091A2E" stroke="#1E3A5F" stroke-width="1.5"/>
+    <circle cx="25" cy="25" r="10" fill="#06B6D4"/>
+    <text x="25" y="29" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="bold">A</text>
+    <text x="45" y="29" fill="#67E8F9" font-family="sans-serif" font-size="13" font-weight="bold">Vết Rạch 100% Giấu Trong Tóc</text>
+    <text x="20" y="52" fill="#94A3B8" font-family="sans-serif" font-size="11.5">
+      <tspan x="20" dy="0">Chỉ 3 điểm rạch siêu vi 1cm ẩn sâu trong chân tóc.</tspan>
+      <tspan x="20" dy="18">Sau lành thương không để lại bất kỳ vết tích nào,</tspan>
+      <tspan x="20" dy="18" fill="#10B981" font-weight="bold">không ai có thể phát hiện bạn từng phẫu thuật.</tspan>
+    </text>
+
+    <!-- Point 2 -->
+    <g transform="translate(0, 110)">
+      <rect width="340" height="95" rx="10" fill="#091A2E" stroke="#1E3A5F" stroke-width="1.5"/>
+      <circle cx="25" cy="25" r="10" fill="#10B981"/>
+      <text x="25" y="29" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="bold">B</text>
+      <text x="45" y="29" fill="#34D399" font-family="sans-serif" font-size="13" font-weight="bold">Bảo Tồn Nang Tóc &amp; Dái Tai</text>
+      <text x="20" y="52" fill="#94A3B8" font-family="sans-serif" font-size="11.5">
+        <tspan x="20" dy="0">Tuyệt đối không gây rụng tóc, không hói đường mổ.</tspan>
+        <tspan x="20" dy="18">Không co kéo dái tai dạng "Pixie Ear" (tai yêu tinh)</tspan>
+        <tspan x="20" dy="18">như phương pháp căng da cắt quanh tai cổ điển.</tspan>
+      </text>
+    </g>
+
+    <!-- Point 3 -->
+    <g transform="translate(0, 220)">
+      <rect width="340" height="95" rx="10" fill="#091A2E" stroke="#1E3A5F" stroke-width="1.5"/>
+      <circle cx="25" cy="25" r="10" fill="#D97706"/>
+      <text x="25" y="29" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="bold">C</text>
+      <text x="45" y="29" fill="#FDE68A" font-family="sans-serif" font-size="13" font-weight="bold">Camera Nội Soi Vi Phẫu Karl Storz</text>
+      <text x="20" y="52" fill="#94A3B8" font-family="sans-serif" font-size="11.5">
+        <tspan x="20" dy="0">Phóng đại phẫu trường gấp 20 lần trên màn hình 4K.</tspan>
+        <tspan x="20" dy="18">Bác sĩ thao tác chính xác từng milimet, bóc tách</tspan>
+        <tspan x="20" dy="18">dưới màng xương KHÔNG CHẢY MÁU, hồi phục 5 ngày.</tspan>
+      </text>
+    </g>
+
+    <!-- Point 4: Badge -->
+    <g transform="translate(0, 330)">
+      <rect width="340" height="60" rx="8" fill="#112A45" stroke="#06B6D4" stroke-width="1"/>
+      <text x="170" y="26" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="bold">PHƯƠNG PHÁP YÊU THÍCH CỦA CÁC NGÔI SAO HOLLYWOOD</text>
+      <text x="170" y="44" text-anchor="middle" fill="#67E8F9" font-family="sans-serif" font-size="11">Phù hợp hoàn hảo cho độ tuổi 30 - 48 hoặc khách hàng sợ sẹo</text>
+    </g>
+  </g>
+</svg>

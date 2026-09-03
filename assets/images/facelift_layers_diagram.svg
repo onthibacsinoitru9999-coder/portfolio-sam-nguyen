@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="layer1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#FBBF24"/>
+    </linearGradient>
+    <linearGradient id="layer2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FB923C"/>
+      <stop offset="100%" stop-color="#F97316"/>
+    </linearGradient>
+    <linearGradient id="layer3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="layer4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#7E22CE"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="480" rx="16" fill="url(#bg3)" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <text x="40" y="50" fill="#F8FAFC" font-family="'Times New Roman', serif" font-size="20" font-weight="bold">4 TẦNG CẤU TRÚC GIẢI PHẪU LÃO HÓA KHUÔN MẶT</text>
+  <text x="40" y="74" fill="#94A3B8" font-family="'Segoe UI', sans-serif" font-size="13">Hiểu đúng nguyên nhân gốc rễ: Tại sao căng da truyền thống thất bại còn Deep Plane duy trì 10 năm?</text>
+
+  <!-- 4 Horizontal Strips / Slices -->
+  <!-- Layer 1: Skin -->
+  <g transform="translate(40, 100)">
+    <rect width="720" height="70" rx="8" fill="#1E293B" stroke="#FBBF24" stroke-width="1.5"/>
+    <rect width="180" height="70" rx="8" fill="url(#layer1)" opacity="0.85"/>
+    <text x="25" y="32" fill="#0F172A" font-family="sans-serif" font-size="14" font-weight="900">TẦNG 1: DA</text>
+    <text x="25" y="52" fill="#451A03" font-family="sans-serif" font-size="11" font-weight="600">Epidermis &amp; Dermis</text>
+
+    <!-- Details -->
+    <text x="205" y="30" fill="#FEF08A" font-family="sans-serif" font-size="12.5" font-weight="bold">Độ dày: 1 - 2 mm · Đặc tính: Co giãn sinh học</text>
+    <text x="205" y="52" fill="#CBD5E1" font-family="sans-serif" font-size="12">
+      <tspan fill="#EF4444" font-weight="bold">Sai lầm cổ điển:</tspan> Căng kéo da đơn thuần chỉ giữ được 6-18 tháng vì da tự giãn ra, làm miệng bị kéo bẹt "gió thổi".
+    </text>
+  </g>
+
+  <!-- Layer 2: Superficial Fat -->
+  <g transform="translate(40, 185)">
+    <rect width="720" height="70" rx="8" fill="#1E293B" stroke="#F97316" stroke-width="1.5"/>
+    <rect width="180" height="70" rx="8" fill="url(#layer2)" opacity="0.85"/>
+    <text x="25" y="32" fill="#0F172A" font-family="sans-serif" font-size="14" font-weight="900">TẦNG 2: MỠ NÔNG</text>
+    <text x="25" y="52" fill="#431407" font-family="sans-serif" font-size="11" font-weight="600">Subcutaneous Fat</text>
+
+    <text x="205" y="30" fill="#FED7AA" font-family="sans-serif" font-size="12.5" font-weight="bold">Khối mỡ má, rãnh mũi má, mỡ nọng hàm jowls</text>
+    <text x="205" y="52" fill="#CBD5E1" font-family="sans-serif" font-size="12">
+      Theo thời gian, mỡ nông bị teo ở thái dương và trượt xệ xuống dưới tạo thành nọng cằm, rãnh marionette khóe miệng.
+    </text>
+  </g>
+
+  <!-- Layer 3: SMAS & Retaining Ligaments (HIGHLIGHTED GOLD) -->
+  <g transform="translate(40, 270)">
+    <rect width="720" height="85" rx="8" fill="#0C253B" stroke="#38BDF8" stroke-width="2"/>
+    <rect width="180" height="85" rx="8" fill="url(#layer3)" opacity="0.95"/>
+    <text x="25" y="36" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="900">TẦNG 3: CÂN SMAS</text>
+    <text x="25" y="58" fill="#E0F2FE" font-family="sans-serif" font-size="11" font-weight="bold">Dây Chằng Giữ Mặt</text>
+
+    <!-- Star Badge -->
+    <rect x="205" y="12" width="220" height="22" rx="4" fill="#0369A1"/>
+    <text x="315" y="27" text-anchor="middle" fill="#BAE6FD" font-family="sans-serif" font-size="10.5" font-weight="bold">CHÌA KHÓA TRẺ HÓA 10 NĂM</text>
+
+    <text x="205" y="52" fill="#38BDF8" font-family="sans-serif" font-size="13" font-weight="bold">Hệ thống cân cơ nâng đỡ toàn bộ khuôn mặt</text>
+    <text x="205" y="70" fill="#E2E8F0" font-family="sans-serif" font-size="12">
+      Deep Plane đi bên dưới tầng này, giải phóng dây chằng gò má để nâng toàn bộ cơ mặt theo hướng thẳng đứng tự nhiên.
+    </text>
+  </g>
+
+  <!-- Layer 4: Deep Plane & Bone -->
+  <g transform="translate(40, 370)">
+    <rect width="720" height="70" rx="8" fill="#1E293B" stroke="#A855F7" stroke-width="1.5"/>
+    <rect width="180" height="70" rx="8" fill="url(#layer4)" opacity="0.85"/>
+    <text x="25" y="32" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="900">TẦNG 4: KHUNG XƯƠNG</text>
+    <text x="25" y="52" fill="#F3E8FF" font-family="sans-serif" font-size="11" font-weight="600">Deep Plane &amp; Periosteum</text>
+
+    <text x="205" y="30" fill="#E9D5FF" font-family="sans-serif" font-size="12.5" font-weight="bold">Màng xương &amp; Dây thần kinh mặt VII</text>
+    <text x="205" y="52" fill="#CBD5E1" font-family="sans-serif" font-size="12">
+      Nội soi bóc tách dưới màng xương (Subperiosteal) cố định cân cơ vào màng xương thái dương, tuyệt đối không đau và không sẹo.
+    </text>
+  </g>
+</svg>

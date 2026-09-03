@@ -1,0 +1,325 @@
+/* ============================================================
+   AMERICAN FACELIFT & FACIAL REJUVENATION INSTITUTE
+   Design System: Ultra-Luxury Medical Editorial · 2026
+   Inspired by NYC & Beverly Hills Premier Facelift Specialists
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&display=swap');
+
+:root {
+  --bg-primary:    #070D1B;
+  --bg-secondary:  #0C162C;
+  --bg-card:       #111F3C;
+  --bg-card-hover: #16284D;
+  --bg-light:      #FAF9F6;
+  --bg-light-card: #FFFFFF;
+
+  --gold-100:      #FDF4C9;
+  --gold-200:      #FBE996;
+  --gold-300:      #F5D765;
+  --gold-400:      #E6CA65;
+  --gold-500:      #D4AF37;
+  --gold-600:      #AA771C;
+  --gold-700:      #8B6508;
+  --gold-gradient: linear-gradient(135deg, #FFF6D1 0%, #D4AF37 50%, #996515 100%);
+  --gold-glow:     0 0 25px rgba(212, 175, 55, 0.25);
+
+  --slate-900:     #0F172A;
+  --slate-800:     #1E293B;
+  --slate-700:     #334155;
+  --slate-400:     #94A3B8;
+  --slate-300:     #CBD5E1;
+  --slate-100:     #F1F5F9;
+
+  --font-serif:    'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  --font-body:     'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  --border-gold:   rgba(212, 175, 55, 0.28);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+}
+
+/* Base */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body.facelift-body {
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  color: #E2E8F0;
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.text-gold-gradient {
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.gold-glow {
+  box-shadow: var(--gold-glow);
+}
+
+.gold-border {
+  border: 1px solid var(--border-gold);
+}
+
+.gold-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+  width: 100%;
+}
+
+/* Luxury Glass Cards */
+.glass-panel {
+  background: rgba(17, 31, 60, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.glass-panel:hover {
+  border-color: rgba(212, 175, 55, 0.45);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* Buttons */
+.btn-gold {
+  background: var(--gold-gradient);
+  color: #070D1B;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 14px 28px;
+  border-radius: 9999px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(212, 175, 55, 0.45);
+  color: #020617;
+}
+
+.btn-gold::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.35) 25%,
+    transparent 30%
+  );
+  transform: translateX(-100%);
+  transition: transform 0.75s ease-out;
+}
+
+.btn-gold:hover::after {
+  transform: translateX(100%);
+}
+
+.btn-outline-gold {
+  background: transparent;
+  color: #FDF4C9;
+  border: 1.5px solid #D4AF37;
+  font-weight: 600;
+  padding: 13px 26px;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-outline-gold:hover {
+  background: rgba(212, 175, 55, 0.12);
+  border-color: #FDF4C9;
+  color: #FFFFFF;
+}
+
+/* Before / After Split Comparison Slider */
+.ba-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 2px solid rgba(212, 175, 55, 0.35);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  user-select: none;
+  background: #020617;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.ba-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 116.66%; /* 600x700 aspect ratio */
+}
+
+.ba-image-wrapper img,
+.ba-image-wrapper svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.ba-after-img {
+  z-index: 1;
+}
+
+.ba-before-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  overflow: hidden;
+  clip-path: inset(0 50% 0 0); /* Dynamic via JS */
+  will-change: clip-path;
+}
+
+.ba-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: #D4AF37;
+  z-index: 10;
+  cursor: ew-resize;
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.8);
+  transform: translateX(-50%);
+  will-change: left;
+}
+
+.ba-handle-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--gold-gradient);
+  border: 3px solid #070D1B;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6), 0 0 10px rgba(212, 175, 55, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #070D1B;
+  cursor: grab;
+}
+
+.ba-handle-circle:active {
+  cursor: grabbing;
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+.ba-badge-label {
+  position: absolute;
+  top: 20px;
+  z-index: 5;
+  padding: 6px 14px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.ba-badge-before {
+  left: 20px;
+  background: rgba(220, 38, 38, 0.85);
+  color: #FFFFFF;
+}
+
+.ba-badge-after {
+  right: 20px;
+  background: rgba(5, 150, 105, 0.9);
+  color: #FFFFFF;
+}
+
+/* Pulse Animation for Guarantee Badge */
+@keyframes goldPulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4); }
+  70% { transform: scale(1.02); box-shadow: 0 0 0 15px rgba(212, 175, 55, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+}
+
+.warranty-pulse {
+  animation: goldPulse 3.5s infinite;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #070D1B;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 4px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Sticky Luxury Navigation */
+.facelift-nav {
+  background: rgba(7, 13, 27, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.18);
+  transition: all 0.3s ease;
+}
+
+.facelift-nav.scrolled {
+  background: rgba(5, 9, 20, 0.98);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  border-bottom-color: rgba(212, 175, 55, 0.35);
+}
+
+/* Timeline & Steps */
+.step-number {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.12);
+  border: 2px solid #D4AF37;
+  color: #FDF4C9;
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

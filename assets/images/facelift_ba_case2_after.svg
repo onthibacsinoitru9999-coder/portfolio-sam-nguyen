@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradBA4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0E2E42"/>
+      <stop offset="100%" stop-color="#081826"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="700" fill="url(#bgGradBA4)"/>
+
+  <!-- Face Front-Oblique (After Endoscopic Scarless Lift) -->
+  <g transform="translate(50, 40)">
+    <!-- Glossy Voluminous Hair (Conceals tiny 1cm portals) -->
+    <path d="M 130 170 Q 120 30 250 20 Q 380 25 410 150 Q 430 240 400 360 Q 370 470 330 510 L 170 510 Z" fill="#2E1A12"/>
+
+    <!-- Neck (Firm, youthful) -->
+    <path d="M 210 370 Q 200 440 180 530 L 350 530 Q 330 440 310 370" fill="#FCE9DC"/>
+
+    <!-- Lifted, Youthful Face Oval (Heart Shape) -->
+    <path d="M 210 100 Q 360 80 375 180 Q 390 250 370 315 Q 340 365 280 375 Q 220 375 190 325 Q 170 255 175 180 Z" fill="#FCE9DC"/>
+
+    <!-- High Plump Apple Cheek (Tái định vị mỡ gò má) -->
+    <ellipse cx="240" cy="225" rx="34" ry="24" fill="#FDBA74" opacity="0.45"/>
+
+    <!-- Lifted Brow & Radiant Almond Fox-Eye -->
+    <g transform="translate(210, 165)">
+      <path d="M 10 10 Q 40 -8 75 -10 Q 95 0 105 5" fill="none" stroke="#3D271D" stroke-width="4.5" stroke-linecap="round"/>
+      <path d="M 20 22 Q 50 8 80 18" fill="none" stroke="#5A3525" stroke-width="2.5"/>
+      <ellipse cx="50" cy="20" rx="13" ry="9" fill="#422E1B"/>
+      <circle cx="53" cy="17" r="3.5" fill="#FFF"/>
+      <circle cx="48" cy="23" r="1.5" fill="#FFF"/>
+      <!-- Zero wrinkles at lateral canthus -->
+    </g>
+
+    <!-- Refined, smoothed nasolabial line -->
+    <path d="M 205 255 Q 200 280 210 300" fill="none" stroke="#D79573" stroke-width="1.5" opacity="0.3"/>
+
+    <!-- Ear Region: ABSOLUTELY UNTOUCHED & ZERO SCARS -->
+    <g transform="translate(350, 215)">
+      <path d="M 0 10 Q 25 5 20 45 Q 20 80 0 95 Z" fill="#FCE9DC" stroke="#D79573" stroke-width="1.5"/>
+      <!-- Green Checkmark Badge: KHÔNG SẸO TAI -->
+      <circle cx="10" cy="50" r="16" fill="#065F46" stroke="#34D399" stroke-width="1.5"/>
+      <path d="M 5 50 L 9 54 L 16 45" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Tag -->
+  <g transform="translate(30, 40)">
+    <rect width="230" height="34" rx="6" fill="#0284C7" opacity="0.95"/>
+    <text x="115" y="22" text-anchor="middle" fill="#FFFFFF" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="900">SAU NỘI SOI · 0 SẸO</text>
+  </g>
+
+  <g transform="translate(420, 40)">
+    <rect width="150" height="34" rx="6" fill="#0F172A" stroke="#38BDF8" stroke-width="1"/>
+    <text x="75" y="22" text-anchor="middle" fill="#38BDF8" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold">100% GIẤU TRONG TÓC</text>
+  </g>
+
+  <g transform="translate(30, 610)">
+    <rect width="540" height="65" rx="8" fill="#0F172A" stroke="#0284C7" stroke-width="1"/>
+    <text x="20" y="24" fill="#38BDF8" font-family="sans-serif" font-size="12" font-weight="bold">✓ Kết quả sau 1 tháng — Căng da nội soi vi phẫu:</text>
+    <text x="20" y="44" fill="#E2E8F0" font-family="sans-serif" font-size="11.5">Gò má căng mọng baby, mắt tươi trẻ thần thái. Vết mổ 1cm nằm trọn trong tóc, quanh tai sạch bóng không tì vết.</text>
+  </g>
+</svg>

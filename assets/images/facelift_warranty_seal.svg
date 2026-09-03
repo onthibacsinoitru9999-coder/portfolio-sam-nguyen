@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDF4C9"/>
+      <stop offset="25%" stop-color="#D4AF37"/>
+      <stop offset="50%" stop-color="#AA771C"/>
+      <stop offset="75%" stop-color="#E6CA65"/>
+      <stop offset="100%" stop-color="#8B6508"/>
+    </linearGradient>
+    <linearGradient id="darkPlate" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <g transform="translate(200,200)">
+    <!-- Starburst Points -->
+    <g fill="url(#goldGrad)" opacity="0.85">
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(0)"/>
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(15)"/>
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(30)"/>
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(45)"/>
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(60)"/>
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(75)"/>
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(90)"/>
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(105)"/>
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(120)"/>
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(135)"/>
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(150)"/>
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(165)"/>
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(180)"/>
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(195)"/>
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(210)"/>
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(225)"/>
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(240)"/>
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(255)"/>
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(270)"/>
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(285)"/>
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(300)"/>
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(315)"/>
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(330)"/>
+      <path d="M0,-190 L12,-165 L-12,-165 Z" transform="rotate(345)"/>
+    </g>
+
+    <!-- Outer Gold Rings -->
+    <circle r="172" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+    <circle r="162" fill="url(#darkPlate)" stroke="url(#goldGrad)" stroke-width="2.5"/>
+    <circle r="152" fill="none" stroke="url(#goldGrad)" stroke-dasharray="4,4" stroke-width="1.5"/>
+
+    <!-- Laurel Leaves Left -->
+    <g fill="url(#goldGrad)" opacity="0.9">
+      <path d="M-65,-85 Q-90,-95 -80,-120 Q-65,-105 -65,-85 Z"/>
+      <path d="M-80,-60 Q-110,-65 -105,-90 Q-85,-80 -80,-60 Z"/>
+      <path d="M-90,-30 Q-120,-30 -120,-55 Q-100,-50 -90,-30 Z"/>
+      <path d="M-90,5 Q-120,10 -115,-15 Q-97,-10 -90,5 Z"/>
+      <path d="M-80,40 Q-105,50 -100,25 Q-85,25 -80,40 Z"/>
+      <path d="M-60,70 Q-80,85 -80,60 Q-65,58 -60,70 Z"/>
+      <!-- Leaves Right -->
+      <path d="M65,-85 Q90,-95 80,-120 Q65,-105 65,-85 Z"/>
+      <path d="M80,-60 Q110,-65 105,-90 Q85,-80 80,-60 Z"/>
+      <path d="M90,-30 Q120,-30 120,-55 Q100,-50 90,-30 Z"/>
+      <path d="M90,5 Q120,10 115,-15 Q97,-10 90,5 Z"/>
+      <path d="M80,40 Q105,50 100,25 Q85,25 80,40 Z"/>
+      <path d="M60,70 Q80,85 80,60 Q65,58 60,70 Z"/>
+    </g>
+
+    <!-- Header Text -->
+    <text y="-105" text-anchor="middle" fill="#FDF4C9" font-family="'Times New Roman', serif" font-size="12" font-weight="bold" letter-spacing="3">TIÊU CHUẨN Y KHOA HOA KỲ</text>
+
+    <!-- Stars -->
+    <g fill="url(#goldGrad)" transform="translate(0, -84)">
+      <polygon points="0,-8 2.4,-2.5 8,-2.5 3.5,1 5.5,6.5 0,3 -5.5,6.5 -3.5,1 -8,-2.5 -2.4,-2.5"/>
+      <polygon points="-24,-5 -22,-0.5 -17,-0.5 -21,2.5 -19.5,7 -24,4 -28.5,7 -27,2.5 -31,-0.5 -26,-0.5"/>
+      <polygon points="24,-5 26,-0.5 31,-0.5 27,2.5 28.5,7 24,4 19.5,7 21,2.5 17,-0.5 22,-0.5"/>
+    </g>
+
+    <!-- 10 -->
+    <text y="-5" text-anchor="middle" fill="url(#goldGrad)" font-family="'Times New Roman', serif" font-size="86" font-weight="900" filter="url(#goldGlow)">10</text>
+
+    <!-- NĂM -->
+    <text y="32" text-anchor="middle" fill="#FFFFFF" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" letter-spacing="6">NĂM</text>
+
+    <!-- Ribbon -->
+    <g transform="translate(0, 70)">
+      <rect x="-125" y="-18" width="250" height="34" rx="6" fill="url(#goldGrad)"/>
+      <text y="5" text-anchor="middle" fill="#0A1128" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="900" letter-spacing="2">BẢO HÀNH CẤU TRÚC</text>
+    </g>
+
+    <text y="122" text-anchor="middle" fill="#94A3B8" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" letter-spacing="2">DEEP PLANE &amp; NỘI SOI</text>
+    <text y="139" text-anchor="middle" fill="#D4AF37" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" letter-spacing="1">THS.BS VIỆN TRUNG ƯƠNG</text>
+  </g>
+</svg>
