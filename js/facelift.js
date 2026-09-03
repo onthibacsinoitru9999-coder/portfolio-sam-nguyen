@@ -137,11 +137,11 @@ function initCaseSwitcher() {
       if (!data) return;
 
       tabBtns.forEach(b => {
-        b.classList.remove('active', 'border-amber-400', 'text-amber-300', 'bg-amber-400/10');
-        b.classList.add('border-slate-700', 'text-slate-400');
+        b.classList.remove('active', 'border-[#005BAC]', 'bg-[#005BAC]', 'text-white', 'shadow-xs');
+        b.classList.add('border-slate-200', 'bg-white', 'text-slate-700');
       });
-      btn.classList.add('active', 'border-amber-400', 'text-amber-300', 'bg-amber-400/10');
-      btn.classList.remove('border-slate-700', 'text-slate-400');
+      btn.classList.add('active', 'border-[#005BAC]', 'bg-[#005BAC]', 'text-white', 'shadow-xs');
+      btn.classList.remove('border-slate-200', 'bg-white', 'text-slate-700');
 
       // Update Images & Details with subtle fade
       if (beforeImg && afterImg) {
@@ -204,11 +204,11 @@ function initAnatomyExplorer() {
       if (!data) return;
 
       buttons.forEach(b => {
-        b.classList.remove('bg-amber-400/20', 'border-amber-400', 'text-amber-300');
-        b.classList.add('bg-slate-800/60', 'border-slate-700', 'text-slate-300');
+        b.classList.remove('border-2', 'border-[#005BAC]', 'bg-sky-50', 'text-[#005BAC]');
+        b.classList.add('border', 'border-slate-200', 'bg-white', 'text-slate-700');
       });
-      btn.classList.add('bg-amber-400/20', 'border-amber-400', 'text-amber-300');
-      btn.classList.remove('bg-slate-800/60', 'border-slate-700', 'text-slate-300');
+      btn.classList.add('border-2', 'border-[#005BAC]', 'bg-sky-50', 'text-[#005BAC]');
+      btn.classList.remove('border', 'border-slate-200', 'bg-white', 'text-slate-700');
 
       if (titleEl) titleEl.textContent = data.name;
       if (depthEl) depthEl.textContent = data.depth;
